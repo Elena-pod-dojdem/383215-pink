@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Елена Евстафьева](https://up.htmlacademy.ru/adaptive/13/user/383215).
-* Наставник: `Неизвестно`.
+* Наставник: `Макс Пушкарев`.
 
 ---
 
