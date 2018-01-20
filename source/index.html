@@ -10,21 +10,70 @@
           <img src="img/logotype-mobile.svg" width="75" height="22" alt="Pink" class="header_logo-image">
         </a>
         <nav class="main-nav">
-          <ul class="main-nav_list site-list">
-            <li class="site-list_item">
-              <a>Главная</a>
-            </li>
-            <li class="site-list_item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list_item">
-              <a href="#">Конкурс</a>
-            </li>
-            <li class="site-list_item">
-              <a href="#">HTML Academy</a>
-            </li>
-          </ul>
+          <button class="main-nav_toggle" type="button">Открыть меню</button>
+          <div class="main-nav_wrapper">
+            <ul class="main-nav_list site-list">
+              <li class="site-list_item">
+                <a>Главная</a>
+              </li>
+              <li class="site-list_item">
+                <a href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list_item">
+                <a href="#">Конкурс</a>
+              </li>
+              <li class="site-list_item">
+                <a href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
         </nav>
     </header>
+    <main class="main-page">
+      <h1 class="visually-hidden">Здесь будет какой-то заголовок!</h1>
+       <div class="availability">
+         <h2 class="visually-hidden">Доступность</h2>
+         <button class="main_toggle" type="button">Скачать приложение</button>
+         <div class="main_info main_info--icons">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
+      </div>
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <div class="advantages_item">Устали от серости мегаполиса?</div>
+        <div class="advantages_item">Нам есть, что вам предложить!</div>
+        <ul class="advantages_list">
+          <li class="advantages_item"> 
+            <h3 class="advantages_title">Поднимает настроение</h3>
+            <p class="advantages_info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages_item"> 
+            <h3 class="advantages_title">Меняет мир вокруг</h3>
+            <p class="advantages_info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="advantages_item"> 
+            <h3 class="advantages_title">Заводит новых друзей</h3>
+            <p class="advantages_info advantages_info--image">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+         </ul>
+        </section>
+        <section class="block-review">
+          <div class="block-review_wrapper slider">
+            <h2 class="visually-hidden">Отзывы</h2>
+            <h3 class="block-review_author">Николай Петров</h3>
+            <p class="block-review_quote">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            <p class="block-review_toggles slider_toggles">
+              <button class="slider_toggle" type="button">1</button>
+              <button class="slider_toggle" type="button">2</button>
+              <button class="slider_toggle" type="button">3</button>
+            </p>
+          </div>
+        </section>
+        <section class="block-plan">
+          <div class="block-plan_wrapper slider">
+            <h2 class="visually-hidden">План Стандартный</h2>
+            <h3 class="block-plan_standart">Стандарт</h3>
+          </div>
+        
+        </section>
+    </main>
   </body>
 </html>
