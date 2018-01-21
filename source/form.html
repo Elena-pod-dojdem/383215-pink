@@ -27,14 +27,88 @@
              </li>
             </ul>
           </div>
-        </nav>
-        <h1 class="header_title">Конкурс на самое безбашенное путешествия с Пинк</h1>
-      </header>
-      <main class="form-page">
-        <h1 class="visually-hidden">Формы для заполнения</h1>
-        <section class="block-forms">
-          <p class="block-forms_text">Поделитесь своей историей и получите шанс выигарть ценный приз - 1000 миль на вашу бонусную карту!</p>
-          <label for="surname-field" class="label-surname">ФАМИЛИЯ:</label>
-          <input type="text" class="input-surname" id="surname-field" placeholder="Укажите фамилию *">
-        </section>
-      </main>
+       </nav>
+       <h1 class="header_title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </header>
+    <main class="form-page">
+      <h1 class="visually-hidden">Формы для заполнения</h1>
+      <form action="https://echo.htmlacademy.ru" class="form">
+         <p class="block-forms_text">Поделитесь своей историей и получите шанс выигарть ценный приз - 1000 миль на вашу бонусную карту!</p>
+         <fieldset class="personal-form">
+          <label for="surname-field" class="label-surname">ФАМИЛИЯ:
+          <input type="text" class="input-surname" id="surname-field" placeholder="Укажите фамилию *"></label>
+          <label for="name-field" class="label-name">ИМЯ:
+          <input type="text" class="input-name" id="name-field" placeholder="Введите ваше имя *"></label>
+          <label for="patronymic-field" class="label-patronymic">ОТЧЕСТВО:
+          <input type="text" class="input-patronymic" id="patronymic-field" placeholder="Ну и отчество тоже"></label>
+         </fieldset>
+         <h3 class="attainment-header">ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</h3>
+         <fieldset class="attainment-block">
+           <label class="checkbox-field">
+           <input type="checkbox" checked><span>Сделал селфи с акулой</span>
+           </label>
+           <label class="checkbox-on-field">
+           <input type="checkbox" checked><span>Обгорел на пляже</span>
+           </label>
+           <label class="checkbox-field">
+           <input type="checkbox"><span>Видел Чака Норриса</span>
+           </label>
+           <label class="checkbox-on-field">
+           <input type="checkbox"><span>Накупил сувениров</span>
+           </label>
+           <label class="checkbox-on-field">
+           <input type="checkbox" checked><span>Удержал башню</span>
+           </label>
+           <label class="checkbox-on-field">
+           <input type="checkbox"><span>Разгромил отель</span>
+           </label>
+          </fieldset>
+          <fieldset class="adress-form">
+            <label for="phone-field" class="label-phone">НОМЕР ТЕЛЕФОНА:
+            <input type="text" class="input-phone" id="phone-field" placeholder="Номер, пожалуйста"></label>
+            <label for="email-field" class="label-email">АДРЕС ПОЧТЫ:
+            <input type="text" class="input-email" id="email-field" placeholder="Введите почту *"></label>
+          </fieldset>
+          <h3 class="attachment-header">С КАКИМ ПРИЛОЖЕНИЕМ ПУТЕШЕСТВОВАЛИ?</h3>
+          <fieldset class="attachment-grid">
+            <label for="iOS">Pink для iOS</label>
+            <input type="radio" id="iOS" class="input-iOS" value="iOS" checked><span>Pink для iOS</span>   
+            <label for="android">Pink на Android</label>
+            <input type="radio" id="android" class="input-android" value="android"><span>Pink на Android</span>
+            <label for="windows">Windows Phone</label>
+            <input type="radio" id="windows" name="input-windows" value="windows"><span>Windows Phone</span>
+          </fieldset>
+          <section class="comments-field">
+            <h3 class="comments-header">ОПИШИТЕ СВОИ ЭМОЦИИ</h3>
+            <textarea name="comment" cols="30" rows="10" placeholder="Можно пря в красках, не стесняясь в выражениях"></textarea>
+          </section>
+          <button type="submit" class="button-submit">ОТПРАВИТЬ ФОРМУ</button>
+         </form>
+         <small class="form-clarification form-clarification--top"><sup>*</sup>- ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</small>
+       </main>
+       <footer class="form-footer">
+         <div class="form-footer_wrapper">
+           <a href="" class="footer_logo">
+             <img src="img/logotype-mobile.svg" width="147" height="40" alt="Pink" class="footer_logo-image">
+           </a>
+           <ul class="social_list">
+             <li class="footer-social_item"> 
+               <a href="#" class="social-link social-link--twitter">twitter</a>
+             </li>
+             <li class="social_item"> 
+               <a href="#" class="social-link social-link--facebook">facebook</a>
+             </li>
+             <li class="social_item"> 
+               <a href="#" class="social-link social-link--youtube">youtube</a>
+             </li>
+           </ul>
+           <div class="website-by">
+             <p class="website-by_text">Разработано</p>
+             <a href="#" class="htmlacademy">htmlacademy
+		       <img src="img/htmlacademy.png" alt="htmlacademy" width="27" height="34">
+		     </a>
+           </div>
+         </div>
+       </footer>
+    </body>
+  </html>    
