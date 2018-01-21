@@ -6,98 +6,98 @@
   </head>
   <body>
     <header class="main-header">
-        <a href="" class="header_logo">
-          <img src="img/logotype-mobile.svg" width="75" height="22" alt="Pink" class="header_logo-image">
+      <div class="main-header__wrapper">     
+        <a href="" class="main-header__logo">
+          <img src="img/logotype-mobile.svg" width="75" height="22" alt="Pink" class="main-header__logo__image">
         </a>
         <nav class="main-nav">
-          <button class="main-nav_toggle" type="button">Открыть меню</button>
-          <div class="main-nav_wrapper">
-            <ul class="main-nav_list site-list">
-              <li class="site-list_item">
-                <a>Главная</a>
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__list__item">
+                <a class="main-nav__list__link">Главная</a>
               </li>
-              <li class="site-list_item">
-                <a href="photo.html">Фотографии</a>
+              <li class="main-nav__list__item">
+                <a href="photo.html" class="main-nav__list__link">Фотографии</a>
               </li>
-              <li class="site-list_item">
-                <a href="#">Конкурс</a>
+              <li class="main-nav__list__item">
+                <a href="#" class="main-nav__list__link">Конкурс</a>
               </li>
-              <li class="site-list_item">
-                <a href="#">HTML Academy</a>
+              <li class="main-nav__list__item">
+                <a href="#" class="main-nav__list__link">HTML Academy</a>
               </li>
             </ul>
           </div>
         </nav>
+      </div>
     </header>
     <main class="main-page">
       <h1 class="visually-hidden">Здесь будет какой-то заголовок!</h1>
-       <div class="availability">
-         <h2 class="visually-hidden">Доступность</h2>
-         <button class="main_toggle" type="button">Скачать приложение</button>
-         <div class="main_info main_info--icons">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
-       </div>
-       <section class="advantages">
-         <h2 class="visually-hidden">Преимущества</h2>
-         <div class="advantages_item">Устали от серости мегаполиса?</div>
-         <div class="advantages_item">Нам есть, что вам предложить!</div>
-         <ul class="advantages_list">
-           <li class="advantages_item"> 
-             <h3 class="advantages_title">Поднимает настроение</h3>
-             <p class="advantages_info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-           </li>
-           <li class="advantages_item"> 
-             <h3 class="advantages_title">Меняет мир вокруг</h3>
-             <p class="advantages_info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-           </li>
-           <li class="advantages_item"> 
-             <h3 class="advantages_title">Заводит новых друзей</h3>
-             <p class="advantages_info advantages_info--image">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-           </li>
+      <section class="availability">
+        <h2 class="visually-hidden">Доступность</h2>
+        <button class="availability__toggle" type="button">Скачать приложение</button>
+        <div class="availability__info availability__info--icons">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <div class="advantages__item">Устали от серости мегаполиса?</div>
+        <div class="advantages__item">Нам есть, что вам предложить!</div>
+        <ul class="advantages__list">
+          <li class="advantages__list__item"> 
+            <h3 class="advantages__list__title">Поднимает настроение</h3>
+            <p class="advantages__list__info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages__list__item"> 
+            <h3 class="advantages__list__title">Меняет мир вокруг</h3>
+            <p class="advantages__list__info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="advantages__list__item"> 
+            <h3 class="advantages__list__title">Заводит новых друзей</h3>
+            <p class="advantages__list__info advantages__list__info--image">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
          </ul>
-       </section>
+        </section>
        <section class="reviews">
-         <div class="reviews_wrapper slider">
+         <div class="review__wrapper slider">
            <h2 class="visually-hidden">Отзывы</h2>
-           <div class="reviews_list slider-list">
-             <blockquote class="reviews-item slider-item">
-               <cite class="reviews_author">Николай Петров</cite>
-               <p class="reviews_text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-             </blockquote>  
-             <blockquote class="reviews-item slider-item">
-               <cite class="reviews_author">Тут какой-то автор</cite>
-               <p class="reviews_text">"Тут его цитата"</p>
-             </blockquote>   
-             <blockquote class="reviews-item slider-item">
-               <cite class="reviews_author">Тут еще один автор</cite>
-               <p class="reviews_text">"И еще одна цитата"</p>
-             </blockquote>    
-             <p class="reviews_toggles slider_toggles">
-               <button class="slider_toggle" type="button">1</button>
-               <button class="slider_toggle" type="button">2</button>
-               <button class="slider_toggle" type="button">3</button>
-             </p>
-           </div> 
-         </div>
-       </section>
+           <div class="review__wrapper__user-block slider-list">
+             <cite class="slider-list__author">Николай Петров</cite>
+             <p class="slider-list__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+           </div>  
+           <div class="review__wrapper__user-block slider-list">
+             <cite class="slider-list__author">Тут какой-то автор</cite>
+             <p class="slider-list__text">"Тут его цитата"</p>
+           </div>   
+           <div class="review__wrapper__user-block slider-list">
+             <cite class="slider-list__author">Тут еще один автор</cite>
+             <p class="slider-list__text">"И еще одна цитата"</p>
+           </div>    
+           <p class="review__wrapper__toggles slider_toggles">
+             <button class="slider-toggle" type="button">1</button>
+             <button class="slider-toggle" type="button">2</button>
+             <button class="slider-toggle" type="button">3</button>
+           </p>
+          </div> 
+        </section>
        <section class="plan">
-         <div class="plan_wrapper slider">
+         <div class="plan__wrapper slider">
            <h2 class="visually-hidden">План Стандартный</h2>
-           <div class="plan-list slider-list">
-             <div class="plan-item slider-item">
+           <div class="plan__wrapper__list slider__list">
+             <div class="plan__wrapper__list__item slider__list__item">
                <h3 class="plan_title">Стандарт</h3>
                <p class="plan_price plan_price--icon">3,99 USD</p>
                <p class="plan_filter plan_filter--icon">РОЗОВЫЙ ФИЛЬТР</p>
                <p class="plan_smile plan_smile--icon">СМАЙЛИКИ</p>
                <p class="plan_comments plan_comments--icon">КОММЕНТАРИИ</p>
              </div>
-             <div class="plan-item slider-item">
+             <div class="plan_item slider_item">
                <h3 class="plan_title">Не стандарт</h3>
                <p class="plan_price plan_price--icon">3,99 USD</p>
                <p class="plan_filter plan_filter--icon">РОЗОВЫЙ ФИЛЬТР</p>
                <p class="plan_smile plan_smile--icon">СМАЙЛИКИ</p>
                <p class="plan_comments plan_comments--icon">КОММЕНТАРИИ</p>
              </div>
-             <div class="plan-item slider-item">
+             <div class="plan_item slider_item">
                <h3 class="plan_title">И еще какой-то план</h3>
                <p class="plan_price plan_price--icon">3,99 USD</p>
                <p class="plan_filter plan_filter--icon">РОЗОВЫЙ ФИЛЬТР</p>
@@ -114,22 +114,22 @@
        </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer_contacts contasts">
-        <div class="contacts_text"> 
-          <b class="contacts_question">Остались вопросы?</b>
-          <b class="contacts_offer">Свяжитесь с нами!</b>
+      <div class="main-footer__contacts contacts">
+        <div class="main-footer__contacts__text"> 
+          <b class="main-footer__contacts__question">Остались вопросы?</b>
+          <b class="main-footer__contacts__offer">Свяжитесь с нами!</b>
         </div>  
         <div class="contacts_phone">
           <p class="contacts_call-us">Звоните:</p>
-          <span class="contacts_phone-mobile">+7(812)555-66-66</span>
+          <span class="contacts_mobile">+7(812)555-66-66</span>
         </div>
         <div class="contacts_email">
           <p class="contacts_write-us">Пишите:</p>
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <a class="contacst_link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
         <div class="contacts_adress">
           <p class="contacts_visit-us">Приезжайте в гости:</p>
-          <p class="contacts_text">ул. Большая Конюшенная, 19/8</p>
+          <p class="contacts-adress_text">ул. Большая Конюшенная, 19/8</p>
         </div>
         <div class="contacts_map">
           <img src="img/map.png" width="100%" height="" alt="Карта">
