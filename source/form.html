@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="form-header">
@@ -10,10 +11,10 @@
         <a href="" class="header__logo">
           <img src="img/logotype-mobile.svg" width="75" height="22" alt="Pink" class="header-logo__image">
         </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
+        <nav class="form-nav">
+          <button class="form-nav__toggle" type="button">Открыть меню</button>
+          <div class="form-nav__wrapper">
+            <ul class="form-nav__list site-list">
               <li class="site-list__item">
                 <a>Главная</a>
               </li>
@@ -34,7 +35,7 @@
     </header>
     <main class="form-page">
       <form action="https://echo.htmlacademy.ru" class="form">
-        <div class="form-container">
+        <div class="form_container">
           <h1 class="visually-hidden">Формы для заполнения</h1>
           <p class="form-page__text">Поделитесь своей историей и получите шанс выигарть ценный приз - 1000 миль на вашу бонусную карту!</p>
             <fieldset class="personal-form">
@@ -52,7 +53,7 @@
               </div>
             </fieldset>
             <fieldset class="attainment-block">
-              <h3 class="attainment-header">ваше безбашенные достижения в путешествии</h3>
+              <h3 class="attainment-header">ваши безбашенные достижения в путешествии</h3>
               <div class="attainment-container">
                 <label class="attainment__label">checked</label>
                 <input class="attainment__input" type="checkbox" checked><span>Сделал селфи с акулой</span>
@@ -89,18 +90,18 @@
               </div>
             </fieldset>
             <fieldset class="attachment-grid">
-              <h3 class="attachment-header">с какими приложениями путешествовали?</h3>
-              <div class="attachment-container">
+              <h3 class="attachment_header">с какими приложениями путешествовали?</h3>
+              <div class="attachment_container">
                 <label for="iOS"
                 class="attachment__label">Pink для iOS</label>
                 <input type="radio" id="iOS"
                 class="attachment__input" value="iOS" checked><span>Pink для iOS</span>
               </div>
-              <div class="attachment-container">
+              <div class="attachment_container">
                 <label for="android" class="attachment__label">Pink на Android</label>
                 <input type="radio" id="android" class="attachment__input" value="android"><span>Pink на Android</span>
               </div>
-              <div class="attachment-container">
+              <div class="attachment_container">
                 <label for="windows" class="attachment__label">Windows Phone</label>
                 <input type="radio" id="windows" class="attachment__input" name="input-windows" value="windows"><span>Windows Phone</span>
               </div>
