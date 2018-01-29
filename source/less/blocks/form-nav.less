@@ -1,6 +1,87 @@
 .form-nav {
+  width: 320px;
   color: @light-color;
   outline: pink solid thin;
-  background-color: @bg-dark;
   font-size: 24px;
 }
+
+.form-nav__wrapper {
+  width: 320px;
+  outline: brown solid thick;
+}
+
+.form-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: white solid thick;
+}
+
+.form-header__title {
+  width: 320px;
+  font-weight: normal;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .form-nav {
+    width: auto;
+    margin: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 660px;
+  margin: 0 auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-nav__list {
+  width: 660px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: white solid thick;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-nav {
+    width: 900px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  height: 110px;
+  margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-nav__list {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: white solid thick;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-list__item a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: @light-color;
+  }
+}
+

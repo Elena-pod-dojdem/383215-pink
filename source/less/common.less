@@ -1,39 +1,62 @@
+@bg-dark: #283645;
+@bg-light: #ffffff;
+@bg-path: "../img/bg-back-mobile@1x.jpg";
+@light-color: #ffffff;
+@dark-color: #000000;
+@tablet-width: 660px;
+@desktop-width: 1200px;
+
 @font-face {
-    font-family: "Open Sans";
-    src:url("../fonts/opensans.woff"),
-        url("../fonts/opensans.woff2");
-    font-weight: normal;
+  font-family: "Open Sans";
+  src:url("../fonts/opensans.woff"),
+    url("../fonts/opensans.woff2");
+  font-weight: normal;
 }
 
 @font-face {
-    font-family: "Open Sans";
-    src:url("../fonts/opensansbold.woff"),
-        url("../fonts/opensansbold.woff");
-     font-weight: bold;
+  font-family: "Open Sans";
+  src:url("../fonts/opensansbold.woff"),
+    url("../fonts/opensansbold.woff");
+  font-weight: bold;
 }
 
 @font-face {
-    font-family: "Open Sans";
-    src:url("../fonts/opensanslight.woff"),
-        url("../fonts/opensanslight.woff");
-    font-weight: light;
+  font-family: "Open Sans";
+  src:url("../fonts/opensanslight.woff"),
+    url("../fonts/opensanslight.woff");
+  font-weight: light;
 }
 
 html,
 body {
-  height: 100%;
-  width: 320px;
+  min-width: 320px;
   margin: 0;
   padding: 0;
-  background-color:@bg-dark;
-  outline: coral solid thin;
-  font-family: Open Sans;
+  background-color: @bg-dark;
+  outline: yellow solid thin;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
   font-size: 18px;
   color: #ffffff;
 }
 
-@bg-dark: #283645;
-@bg-light: #fff;
-@bg-path: "../img/bg-back-mobile@1x.jpg";
-@light-color: #fff;
-@dark-color: #000;
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    width: 660px;
+    background-color: @bg-dark;
+    outline: red solid thick;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    width: 1200px;
+    background-color: @bg-dark;
+    outline: green solid thick;
+  }
+}

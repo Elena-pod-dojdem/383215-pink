@@ -1,4 +1,5 @@
 .footer {
+  width: 320px;
   background: @light-color;
   color: @dark-color;
   outline: red solid thin;
@@ -7,3 +8,16 @@
   font-size: 14px;
 }
 
+@media (min-width: @tablet-width) {
+  .footer {
+    width: 660px;
+    outline: blue solid thick;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer {
+    width: 1200px;
+    outline: yellow solid thick;
+  }
+}

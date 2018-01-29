@@ -8,57 +8,57 @@
   <body>
     <header class="form-header">
       <div class="form-header__container">
-        <a href="" class="header__logo">
-          <img src="img/logotype-mobile.svg" width="75" height="22" alt="Pink" class="header-logo__image">
+        <a href="" class="form-header__logo">
+          <img src="img/logo-pink-blue-mobile.svg" width="75" height="22" alt="Pink" class="header-logo__image">
         </a>
-        <nav class="form-nav">
-          <button class="form-nav__toggle" type="button">Открыть меню</button>
-          <div class="form-nav__wrapper">
-            <ul class="form-nav__list site-list">
-              <li class="site-list__item">
-                <a>Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a href="photo.html">Фотографии</a>
-              </li>
-              <li class="site-list__item">
-                <a href="#">Конкурс</a>
-              </li>
-              <li class="site-list__item">
-                <a href="#">HTML Academy</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <h1 class="main-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <button class="form-header__toggle" type="button">Открыть меню</button>
       </div>
+      <nav class="form-nav">
+        <div class="form-nav__wrapper">
+          <ul class="form-nav__list site-list">
+            <li class="form-list__item">
+              <a>Главная</a>
+            </li>
+            <li class="form-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="form-list__item">
+              <a href="#">Конкурс</a>
+            </li>
+            <li class="form-list__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="form-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
     <main class="form-page">
       <form action="https://echo.htmlacademy.ru" class="form">
-        <div class="form_container">
+        <div class="form__wrapper">
           <h1 class="visually-hidden">Формы для заполнения</h1>
           <p class="form-page__text">Поделитесь своей историей и получите шанс выигарть ценный приз - 1000 миль на вашу бонусную карту!</p>
-            <fieldset class="personal-form">
-              <div class="form-container">
-                <label for="surname-field" class="personal-form__label">фамилия:</label>
-                <input type="text" class="personal-form__input" id="surname-field" placeholder="Укажите фамилию *">
-              </div>
-              <div class="form-container">
-                <label for="name-field" class="personal-form__label">имя:</label>
-                <input type="text" class="personal-form__input" id="name-field" placeholder="Введите ваше имя *">
-              </div>
-              <div class="form-container">
-                <label for="patronymic-field" class="personal-form__label">отчество:</label>
-                <input type="text" class="personal-form__input" id="patronymic-field" placeholder="Ну и отчество тоже">
-              </div>
-            </fieldset>
-            <fieldset class="attainment-block">
-              <h3 class="attainment-header">ваши безбашенные достижения в путешествии</h3>
+          <fieldset class="personal-form">
+            <div class="form__container">
+              <label for="surname-field" class="personal-form__label">фамилия:</label>
+              <input type="text" class="personal-form__input" id="surname-field" placeholder="Укажите фамилию *">
+            </div>
+            <div class="form-container">
+              <label for="name-field" class="personal-form__label">имя:</label>
+              <input type="text" class="personal-form__input" id="name-field" placeholder="Введите ваше имя *">
+            </div>
+            <div class="form-container">
+              <label for="patronymic-field" class="personal-form__label">отчество:</label>
+              <input type="text" class="personal-form__input" id="patronymic-field" placeholder="Ну и отчество тоже">
+            </div>
+          </fieldset>
+          <fieldset class="attainment-block">
+            <h3 class="attainment-header">ваши безбашенные достижения в путешествии</h3>
+            <div class="attainment-container">
+              <label class="attainment__label">checked</label>
+              <input class="attainment__input" type="checkbox" checked><span>Сделал селфи с акулой</span>
+            </div>
               <div class="attainment-container">
-                <label class="attainment__label">checked</label>
-                <input class="attainment__input" type="checkbox" checked><span>Сделал селфи с акулой</span>
-              </div>
-                <div class="attainment-container">
                   <label class="attainment__label">checked </label>
                   <input class="attainment__input" type="checkbox" checked><span>Обгорел на пляже</span>
                 </div>
@@ -79,39 +79,40 @@
                   <input class="attainment__input" type="checkbox"><span>Разгромил отель</span>
                 </div>
             </fieldset>
-            <fieldset class="adress">
-              <div class="adress-container">
-                <label for="phone-field" class="adress__label">номер телефона:</label>
-                <input type="text" class="adress__input" id="phone-field" placeholder="Номер, пожалуйста">
-              </div>
-              <div class="adress-container">
-                <label for="email-field" class="adress__label">адрес почты:</label>
-                <input type="text" class="adress__input" id="email-field" placeholder="Введите почту *">
-              </div>
-            </fieldset>
-            <fieldset class="attachment-grid">
-              <h3 class="attachment_header">с какими приложениями путешествовали?</h3>
-              <div class="attachment_container">
-                <label for="iOS"
+          <fieldset class="adress">
+            <legend class="adress__title">контактная информация </legend>
+            <div class="adress-container">
+              <label for="phone-field" class="adress__label">номер телефона:</label>
+              <input type="text" class="adress__input" id="phone-field" placeholder="Номер, пожалуйста">
+            </div>
+            <div class="adress-container">
+              <label for="email-field" class="adress__label">адрес почты:</label>
+              <input type="text" class="adress__input" id="email-field" placeholder="Введите почту *">
+            </div>
+          </fieldset>
+          <fieldset class="attachment-grid">
+            <h3 class="attachment_header">с каким приложением путешествовали?</h3>
+            <div class="attachment_container">
+              <label for="iOS"
                 class="attachment__label">Pink для iOS</label>
-                <input type="radio" id="iOS"
-                class="attachment__input" value="iOS" checked><span>Pink для iOS</span>
-              </div>
-              <div class="attachment_container">
-                <label for="android" class="attachment__label">Pink на Android</label>
-                <input type="radio" id="android" class="attachment__input" value="android"><span>Pink на Android</span>
-              </div>
-              <div class="attachment_container">
-                <label for="windows" class="attachment__label">Windows Phone</label>
-                <input type="radio" id="windows" class="attachment__input" name="input-windows" value="windows"><span>Windows Phone</span>
-              </div>
-            </fieldset>
-            <section class="comments-field">
-              <h3 class="comments-field__header">опишите свои эмоции</h3>
-              <textarea class="comments-field__textarea" name="comment" cols="30" rows="10" placeholder="Можно прямо в красках, не стесняясь в выражениях"></textarea>
-            </section>
-            <button type="submit" class="form__submit">отправить форму</button>
-            <small class="form__clarification form__clarification--top"><sup>*</sup>- обязательные поля</small>
+              <input type="radio" id="iOS"
+              class="attachment__input" value="iOS" checked><span>Pink для iOS</span>
+            </div>
+            <div class="attachment_container">
+              <label for="android" class="attachment__label">Pink на Android</label>
+              <input type="radio" id="android" class="attachment__input" value="android"><span>Pink на Android</span>
+            </div>
+            <div class="attachment_container">
+              <label for="windows" class="attachment__label">Windows Phone</label>
+              <input type="radio" id="windows" class="attachment__input" name="input-windows" value="windows"><span>Windows Phone</span>
+            </div>
+          </fieldset>
+          <section class="comments-field">
+            <h3 class="comments-field__header">опишите свои эмоции</h3>
+            <textarea class="comments-field__textarea" name="comment" cols="30" rows="10" placeholder="Можно прямо в красках, не стесняясь в выражениях"></textarea>
+          </section>
+          <button type="submit" class="form__submit">отправить форму</button>
+          <small class="form__clarification form__clarification--top"><sup>*</sup>- обязательные поля</small>
         </div>
       </form>
     </main>

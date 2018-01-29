@@ -1,8 +1,71 @@
 .availability {
+  display: flex;
+  flex-direction: column;
   color: @dark-color;
-  background-color: @light-color;
   font-size: 14px;
-  margin: 20px 0;
   padding: 5px 5px;
-  outline: pink solid thin;
+  width: 260px;
+  outline: coral solid thin;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.availability-header {
+  display: none;
+}
+
+.availability__toggle {
+  margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.availability__info {
+  outline: white dotted thin;
+  color: @light-color;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .availability {
+    width: 300px;
+    padding: 40px 20px;
+    outline: yellow solid thin;
+    margin-right: 320px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .availability-header {
+    display: block;
+    padding: 90px 0px 20px 0px;
+    outline: yellow solid thin;
+    color: @light-color;
+    font-weight: normal;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .availability {
+    display: flex;
+    flex-direction: column;
+    color: @dark-color;
+    font-size: 14px;
+    padding: 5px 5px;
+    width: 450px;
+    outline: coral solid thin;
+    margin-left: 0px;
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .availability-header {
+    outline: yellow solid thin;
+    color: @light-color;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

@@ -1,8 +1,15 @@
 .attachment-grid {
-  width: 280px;
-  outline: red solid thin;
-  padding: 10px 2px;
+  outline: red solid thick;
   margin: 10px 0;
   font: inherit;
   border: none;
+  text-align: center;
+}
+
+@media (min-width: @desktop-width) {
+.attachment-grid {
+    order: 3;
+    width: 600px;
+    outline: yellow solid thick;
+  }
 }

@@ -1,7 +1,20 @@
 .main-page {
   width: 320px;
-  outline: red solid thin;
+  outline: coral solid thick;
   font-size: 14px;
-  color: #000;
-  background-color: @light-color;
+  color: #000000;
+}
+
+@media (min-width: @tablet-width){
+  .main-page{
+    width: 660px;
+    outline: red solid thick;
+  }
+}
+
+@media (min-width: @desktop-width){
+  .main-page{
+    width: 1200px;
+    outline: green solid thick;
+  }
 }

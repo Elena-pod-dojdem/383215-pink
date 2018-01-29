@@ -1,7 +1,13 @@
 .personal-form {
-  width: 280px;
-  outline: brown solid thin;
-  padding: 10px 2px;
+  outline: red solid thick;
   font: inherit;
   border: none;
+}
+
+@media (min-width: @desktop-width) {
+.personal-form {
+    order: 2;
+    width: 600px;
+    outline: yellow solid thick;
+  }
 }

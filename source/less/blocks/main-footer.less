@@ -1,7 +1,19 @@
 .main-footer {
+  width: 320px;
   background: @light-color;
   color: @dark-color;
   outline: red solid thin;
-  margin: 20px 0;
   padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer {
+    width: 660px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer {
+    width: 1200px;
+  }
 }

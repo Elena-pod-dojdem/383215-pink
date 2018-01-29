@@ -1,7 +1,69 @@
-.main-header{
-  background:  @bg-dark  url(@bg-path) 50% 100% no-repeat;
+.main-header {
+  width:  320px;
   outline: red solid thin;
-  margin: 0;
-  padding: 0;
+  background: @bg-dark  url(@bg-path) 100% 0px no-repeat;
+}
+
+.main-header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  outline: yellow solid thick;
+}
+
+.main-header__logo {
+  margin: 10px;
+  outline: pink solid thick;
+}
+
+.main-header__toggle {
+  outline: red solid thin;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    width:  660px;
+    background: @bg-dark url(@bg-path) 0px 0px no-repeat;
+    background-size: 660px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__logo {
+    margin: 10px;
+    outline: coral solid thick;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    width: 1200px;
+    background: @bg-dark url("../img/bg-back-mobile@1x.jpg") 0px 0px no-repeat;
+    background-size: 1200px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__container {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  outline: coral solid thin;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__logo {
+    height: 110px;
+    width: 385px;
+  }
 }
 

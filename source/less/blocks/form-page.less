@@ -2,6 +2,44 @@
   width: 320px;
   outline: red solid thin;
   font-size: 14px;
-  color: #000;
+  color: #000000;
   background-color: @light-color;
 }
+
+.form-page__text {
+  outline: aqua solid thick;
+}
+
+@media (min-width: @tablet-width){
+  .form-page{
+    width: 660px;
+    outline: red solid thick;
+  }
+}
+
+@media (min-width: @tablet-width){
+  .form-page__text {
+    margin: 20px 0px;
+    width: 660px;
+    outline: red solid thick;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width){
+  .form-page{
+    width: 1200px;
+    outline: green solid thick;
+  }
+}
+
+@media (min-width: @desktop-width){
+  .form-page__text {
+    margin: 20px 0px;
+    width: 1200px;
+    outline: red solid thick;
+    text-align: center;
+  }
+}
+
+

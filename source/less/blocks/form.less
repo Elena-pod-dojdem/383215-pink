@@ -1,8 +1,24 @@
 .form {
   outline: red solid thin;
   font-size: 14px;
-  color: #000;
+  color: #000000;
   background-color: @light-color;
-  padding: 5px 10px;
   border: none;
 }
+
+.form__wrapper {
+  outline: coral solid thick;
+}
+
+@media (min-width: @desktop-width) {
+  .form__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    outline: yellow solid thick;
+    order: 1;
+  }
+}
+
+
+
