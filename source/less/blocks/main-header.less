@@ -45,6 +45,8 @@
 
 @media (min-width: @desktop-width) {
   .main-header {
+    display: flex;
+    flex-wrap: wrap;
     width: 1200px;
     background: @bg-dark url("../img/bg-back-mobile@1x.jpg") 0px 0px no-repeat;
     background-size: 1200px;
@@ -53,17 +55,27 @@
 
 @media (min-width: @desktop-width) {
   .main-header__container {
-  display: flex;
-  flex-direction: row;
-  width: 1200px;
-  outline: coral solid thin;
+    width: 275px;
+    height: 110px;
+    outline: coral solid thick;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-header__logo {
-    height: 110px;
-    width: 385px;
+    padding-left: 70px;
   }
 }
 
+@media (min-width: @desktop-width) {
+  .main-header__logo img {
+    height: 110px;
+    width: 190px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__toggle {
+    display: none;
+  }
+}

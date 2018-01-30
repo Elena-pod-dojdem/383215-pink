@@ -45,27 +45,33 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    width: 835px;
+    width: 900px;
     margin: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-nav__wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 835px;
-  height: 110px;
-  margin: 0 auto;
+    width: auto;
+    height: 110px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-nav__list {
-  width: 835px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  outline: white solid thick;
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: white solid thick;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list a{
+    text-decoration: none;
+    color: @light-color;
   }
 }

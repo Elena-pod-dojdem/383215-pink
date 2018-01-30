@@ -8,23 +8,23 @@
   <body>
     <header class="photo-header">
       <div class="photo-header__container">
-        <a href="" class="header_logo">
-          <img src="img/logotype-mobile.svg" width="75" height="22" alt="Pink" class="header_logo-image">
+        <a href="" class="photo-header__logo">
+          <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink" class="header_logo-image">
         </a>
         <nav class="photo-nav">
           <button class="photo-nav__toggle" type="button">Открыть меню</button>
           <div class="photo-nav__wrapper">
             <ul class="photo-nav__list site-list">
-              <li class="site-list__item">
+              <li class="photo-list__item">
                 <a>Главная</a>
               </li>
-              <li class="site-list__item">
+              <li class="photo-list__item">
                 <a href="photo.html">Фотографии</a>
               </li>
-              <li class="site-list__item">
+              <li class="photo-list__item">
                 <a href="#">Конкурс</a>
               </li>
-              <li class="site-list__item">
+              <li class="photo-list__item">
                 <a href="#">HTML Academy</a>
               </li>
             </ul>
@@ -36,9 +36,9 @@
     <main class="photo-page">
       <h1 class="visually-hidden">Фотографии пользователей</h1>
       <p class="photo-page__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-      <section class="user-block">
-        <a class="user-block__picture panorama">
-          <img src="img/panorama-mobile@1x.jpg" alt="photo" width="320" height="137" class="user-block__photo">
+      <section class="user-block panorama">
+        <a class="user-block__picture">
+          <img src="img/panorama-mobile@1x.jpg" alt="photo" width="1200" height="506" class="user-block__photo">
         </a>
         <cite class="user-block__author">Анна</cite>
         <span class="user-block__comment-time">(5 МИНУТ НАЗАД:)</span>
@@ -48,79 +48,81 @@
           <span class="user-block__likes-number">215</span>
         </div>
       </section>
-      <section class="user-block">
-        <a class="user-block__picture">
-          <img src="img/photo-car-mobile@1x.jpg" alt="photo" width="280" height="180" class="user-block__photo">
-        </a>
-        <cite class="user-block__author">Левон</cite>
-        <span class="user-block__comment-time">(5 ЧАСОВ НАЗАД:)</span>
-        <p class="user-block__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-        <div class="user-block__likes">
-          <div class="user-block__like">нравится:</div>
-          <span class="user-block__likes-number">356</span>
-        </div>
-      </section>
-      <section class="user-block">
-        <a class="user-block__picture">
-          <img src="img/photo-drumset-mobile@1x.jpg" alt="photo" width="280" height="180" class="user-block__photo">
-        </a>
-        <cite class="user-block__author">Антон</cite>
-        <span class="user-block__comment-time">(12 ЧАСОВ НАЗАД:)</span>
-        <p class="user-block__comment">Соседи будут рады!</p>
-        <div class="user-block__likes">
-          <div class="user-block__like">нравится:</div>
-          <span class="user-block__likes-number">666</span>
-        </div>
-      </section>
-      <section class="user-block">
-        <a class="user-block__picture">
-          <img src="img/photo-window-mobile@1x.jpg" alt="photo" width="280" height="180" class="user-block__photo">
-        </a>
-        <cite class="user-block__author">Борис</cite>
-        <span class="user-block__comment-time">(20 ЧАСОВ НАЗАД:)</span>
-        <p class="user-block__comment">Здесь могла бы быть ваша цитата о высоком и вечном.</p>
-        <div class="user-block__likes">
-          <div class="user-block__like">нравится:</div>
-          <span class="user-block__likes-number">215</span>
-        </div>
-      </section>
-      <section class="user-block">
-        <a class="user-block__picture">
-          <img src="img/photo-fair-mobile@1x.jpg" alt="photo" width="280" height="180" class="user-block__photo">
-        </a>
-        <cite class="user-block__author">Сергей</cite>
-        <span class="user-block__comment-time">(25 ЧАСОВ НАЗАД:)</span>
-        <p class="user-block__comment">Самая кубанская в мире!</p>
-        <div class="user-block__likes">
-          <div class="user-block__like">нравится:</div>
-          <span class="user-block__likes-number">4</span>
-        </div>
-      </section>
-      <section class="user-block">
-        <a class="user-block__picture">
-          <img src="img/photo-pov-mobile@1x.jpg" alt="photo" width="280" height="180" class="user-block__photo">
-        </a>
-        <cite class="user-block__author">Максим</cite>
-        <span class="user-block__comment-time">(40 ЧАСОВ НАЗАД:)</span>
-        <p class="user-block__comment">Где снег-то?</p>
-        <div class="user-block__likes">
-          <div class="user-block__like">нравится:</div>
-          <span class="user-block__likes-number">150</span>
-        </div>
-      </section>
-      <section class="user-block">
-        <a class="user-block__picture">
-          <img src="img/photo-wing-mobile@1x.jpg" alt="photo" width="280" height="180" class="user-block__photo">
-        </a>
-        <cite class="user-block__author">Надежда</cite>
-        <span class="user-block__comment-time">(45 ЧАСОВ НАЗАД:)</span>
-        <p class="user-block__comment">Всем GM и взаимные лайки!</p>
-        <div class="user-block__likes">
-          <div class="user-block__like">нравится:</div>
-          <span class="user-block__likes-number">2560</span>
-        </div>
-      </section>
-      <p class="photo-page__comment">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="photo__container">
+        <section class="user-block car">
+          <a class="user-block__picture">
+            <img src="img/photo-car-mobile@1x.jpg" alt="photo" width="280" height="180" class="user-block__photo">
+          </a>
+          <cite class="user-block__author">Левон</cite>
+          <span class="user-block__comment-time">(5 ЧАСОВ НАЗАД:)</span>
+          <p class="user-block__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <div class="user-block__likes">
+            <div class="user-block__like">нравится:</div>
+            <span class="user-block__likes-number">356</span>
+          </div>
+        </section>
+        <section class="user-block drumset">
+          <a class="user-block__picture">
+            <img src="img/photo-drumset-mobile@1x.jpg" alt="photo" width="280" height="180" class="user-block__photo">
+          </a>
+          <cite class="user-block__author">Антон</cite>
+          <span class="user-block__comment-time">(12 ЧАСОВ НАЗАД:)</span>
+          <p class="user-block__comment">Соседи будут рады!</p>
+          <div class="user-block__likes">
+            <div class="user-block__like">нравится:</div>
+            <span class="user-block__likes-number">666</span>
+          </div>
+        </section>
+        <section class="user-block window">
+          <a class="user-block__picture">
+            <img src="img/photo-window-mobile@1x.jpg" alt="photo" width="280" height="180" class="user-block__photo">
+          </a>
+          <cite class="user-block__author">Борис</cite>
+          <span class="user-block__comment-time">(20 ЧАСОВ НАЗАД:)</span>
+          <p class="user-block__comment">Здесь могла бы быть ваша цитата о высоком и вечном.</p>
+          <div class="user-block__likes">
+            <div class="user-block__like">нравится:</div>
+            <span class="user-block__likes-number">215</span>
+          </div>
+        </section>
+        <section class="user-block fair">
+          <a class="user-block__picture">
+            <img src="img/photo-fair-mobile@1x.jpg" alt="photo" width="280" height="180" class="user-block__photo">
+          </a>
+          <cite class="user-block__author">Сергей</cite>
+          <span class="user-block__comment-time">(25 ЧАСОВ НАЗАД:)</span>
+          <p class="user-block__comment">Самая кубанская в мире!</p>
+          <div class="user-block__likes">
+            <div class="user-block__like">нравится:</div>
+            <span class="user-block__likes-number">4</span>
+          </div>
+        </section>
+        <section class="user-block pov">
+          <a class="user-block__picture">
+            <img src="img/photo-pov-mobile@1x.jpg" alt="photo" width="280" height="180" class="user-block__photo">
+          </a>
+          <cite class="user-block__author">Максим</cite>
+          <span class="user-block__comment-time">(40 ЧАСОВ НАЗАД:)</span>
+          <p class="user-block__comment">Где снег-то?</p>
+          <div class="user-block__likes">
+            <div class="user-block__like">нравится:</div>
+            <span class="user-block__likes-number">150</span>
+          </div>
+        </section>
+        <section class="user-block wing">
+          <a class="user-block__picture">
+            <img src="img/photo-wing-mobile@1x.jpg" alt="photo" width="280" height="180" class="user-block__photo">
+          </a>
+          <cite class="user-block__author">Надежда</cite>
+          <span class="user-block__comment-time">(45 ЧАСОВ НАЗАД:)</span>
+          <p class="user-block__comment">Всем GM и взаимные лайки!</p>
+          <div class="user-block__likes">
+            <div class="user-block__like">нравится:</div>
+            <span class="user-block__likes-number">2560</span>
+          </div>
+        </section>
+      </div>
+      <p class="photo-page__comment">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
       <form action="https://echo.htmlacademy.ru" class="photo-form">
         <section class="edit-block">
           <div class="edit-block__container">

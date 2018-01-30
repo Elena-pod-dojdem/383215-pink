@@ -15,9 +15,26 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 660px;
+    outline: blue solid thick;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .footer {
     width: 1200px;
-    outline: yellow solid thick;
+    outline: blue solid thick;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer__container {
+    width: 1200px;
+    outline: blue solid thick;
   }
 }
