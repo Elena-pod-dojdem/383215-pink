@@ -40,11 +40,11 @@
     </header>
     <main class="main-page">
       <h1 class="visually-hidden">Здесь будет какой-то заголовок!</h1>
-        <section class="advantages">
+      <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
-        <div class="advantages-block">
-          <div class="advantages__item">Устали от серости мегаполиса?</div>
-          <div class="advantages__item">Нам есть, что вам предложить!</div>
+        <div class="advantages__block">
+          <div class="advantages__text">Устали от серости мегаполиса?</div>
+          <div class="advantages__text">Нам есть, что вам<br> предложить!</div>
         </div>
         <ul class="advantages__list">
           <li class="advantages__item">
@@ -59,65 +59,81 @@
             <h3 class="advantages__title">Заводит новых друзей</h3>
             <p class="advantages__info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
-          </ul>
-        </section>
-        <section class="review">
-          <div class="review__wrapper slider">
-            <h2 class="visually-hidden">Отзывы</h2>
-            <div class="review__user-block slider">
-              <cite class="slider__author">Николай Петров</cite>
-              <p class="slider__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-            </div>
-            <div class="review__user-block slider">
-              <cite class="slider__author">Тут какой-то автор</cite>
-              <p class="slider__text">"Тут его цитата"</p>
-            </div>
-            <div class="review__user-block slider">
-              <cite class="slider__author">Тут еще один автор</cite>
-              <p class="slider__text">"И еще одна цитата"</p>
-            </div>
-            <p class="review__toggles slider__toggles">
-              <button class="slider-toggle" type="button">1</button>
-              <button class="slider-toggle" type="button">2</button>
-              <button class="slider-toggle" type="button">3</button>
-            </p>
+        </ul>
+      </section>
+      <section class="effect">
+        <div class="effect__block">
+          <h3 class="effect__title">Эффект на 24 часа!</h3>
+          <p class="effect__text">Британские ученые провели исследования
+и доказали,<br> что положительный эффект
+от использования приложения длится
+целые сутки!</p>
+           <a href="#" class="effect__link">Узнать больше об исследовании</a>
+        </div>
+      </section>
+      <section class="review">
+        <div class="review__wrapper slider">
+          <h2 class="visually-hidden">Отзывы</h2>
+          <div class="review__user-block slider first">
+            <cite class="review__author">Николай Петров</cite>
+            <p class="review__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            <p class="review__author-info">25 лет, водитель трамвая</p>
           </div>
-        </section>
-        <section class="plan">
-          <div class="plan__wrapper slider">
-            <div class="plan__list slider__list">
-              <div class="plan__container slider__item">
-                <h2 class="visually-hidden">План Стандартный</h2>
-                <h3 class="plan__title plan__title--hit">Стандарт</h3>
-                <div class="plan__price">3,99 usd</div>
-                <div class="plan__filter plan-item--icon">розовый фильтр</div>
-                <div class="plan__smile plan-item--icon">смайлики</div>
-                <div class="plan__comments plan-item--icon">комментарии</div>
+          <div class="review__user-block slider second">
+            <cite class="review__author">Тут какой-то автор</cite>
+            <p class="review__text">"Тут его цитата"</p>
+          </div>
+          <div class="review__user-block slider third">
+            <cite class="review__author">Тут еще один автор</cite>
+            <p class="review__text">"И еще одна цитата"</p>
+          </div>
+          <p class="review__toggles slider__toggles">
+            <button class="slider-toggle" type="button">1</button>
+            <button class="slider-toggle" type="button">2</button>
+            <button class="slider-toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+      <section class="plan">
+        <div class="plan__slider">
+          <div class="plan__slider-inner">
+            <div class="plan__slider-slides">
+              <div class="plan__content-container hidden">
+                <p class="plan__title">Стандарт</p>
+                <div class="plan__features">Розовый фильтр</div>
+                <div class="plan__features">Смайлики</div>
+                <div class="plan__features">Комментарии</div>
               </div>
-              <div class="plan__container slider__item">
-                <h2 class="visually-hidden">План Стандартный</h2>
-                <h3 class="plan__title">Стандарт</h3>
-                <div class="plan__price">3,99 usd</div>
-                <div class="plan__filter plan__filter--icon">розовый фильтр</div>
-                <div class="plan__smile plan__smile--icon">смайлики</div>
-                <div class="plan__comments plan__comments--icon">комментарии</div>
+              <div class="plan__content-container">
+                <div class="plan__title">Стандарт</div>
+                <p class="plan__features">Розовый фильтр</p>
+                <p class="plan__features">Смайлики</p>
+                <p class="plan__features">Комментарии</p>
               </div>
-              <div class="plan__container slider__item">
-              <h2 class="visually-hidden">План Стандартный</h2>
-                <h3 class="plan__title">Стандарт</h3>
-                <div class="plan__price">3,99 usd</div>
-                <div class="plan__filter plan__filter--icon">розовый фильтр</div>
-                <div class="plan__smile plan__smile--icon">смайлики</div>
-                <div class="plan__comments plan__comments--icon">комментарии</div>
+              <div class="plan__content-container">
+                <div class="plan__title">База</div>
+                <p class="plan__features">Розовый фильтр</p>
+                <p class="plan__features">Смайлики</p>
+                <p class="plan__features">Комментарии</p>
               </div>
-              <p class="plan__toggles slider__toggles">
-                <button class="slider-toggle" type="button">1</button>
-                <button class="slider-toggle" type="button">2</button>
-                <button class="slider-toggle" type="button">3</button>
-              </p>
+              <div class="plan__content-container">
+                <div class="plan__title">Анлим</div>
+                <p class="plan__features">Розовый фильтр</p>
+                <p class="plan__features">Смайлики</p>
+                <p class="plan__features">Комментарии</p>
+              </div>
             </div>
           </div>
-        </section>
+          <input type="radio" id="btn-1" name="toggle">
+          <input type="radio" id="btn-2" name="toggle" checked>
+          <input type="radio" id="btn-3" name="toggle">
+          <div class="plan__slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer__container">
@@ -127,7 +143,7 @@
             <b class="main-footer__offer">Свяжитесь с нами!</b>
           </div>
           <div class="main-footer__phone">
-            <p class="main-footer__text">Звоните:</p>
+            <p class="main-footer__phrase">Звоните:</p>
             <span class="main-footer__mobile">+7(812)555-66-66</span>
           </div>
           <div class="main-footer__email">
