@@ -10,15 +10,26 @@
   outline: coral solid thick;
 }
 
+@media (min-width: @tablet-width){
+  .form__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .form__wrapper {
     display: flex;
     flex-direction: column;
-    width: 1200px;
     outline: yellow solid thick;
     order: 1;
   }
 }
+
+.form__button-container {
+  height: 50px;
+}
+
 
 
 

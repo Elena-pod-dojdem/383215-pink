@@ -2,12 +2,24 @@
   outline: red solid thick;
   font: inherit;
   border: none;
+  order: 0;
+}
+
+.form__container {
+  height: 60px;
+}
+
+@media (min-width: @tablet-width) {
+.personal-form {
+    order: 0;
+    outline: yellow solid thick;
+  }
 }
 
 @media (min-width: @desktop-width) {
 .personal-form {
-    order: -2;
-    width: -550px;
+    order: 0;
+    width: 45%;
     outline: yellow solid thick;
   }
 }

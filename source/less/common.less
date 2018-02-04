@@ -29,7 +29,6 @@
 
 html,
 body {
-  width: 320px;
   margin: 0;
   padding: 0;
   background-color: @bg-dark;
@@ -44,7 +43,22 @@ img {
   height: auto;
 }
 
-@media (min-width: @tablet-width) {
+.container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/*@media (min-width: @tablet-width) {
   body {
     width: 660px;
     background-color: @bg-dark;
@@ -58,4 +72,4 @@ img {
     background-color: @bg-dark;
     outline: green solid thick;
   }
-}
+}*/

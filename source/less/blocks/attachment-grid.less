@@ -6,12 +6,20 @@
   text-align: center;
 }
 
+@media (min-width: @tablet-width) {
+.attachment-grid {
+    order: 1;
+  }
+}
+
 @media (min-width: @desktop-width) {
 .attachment-grid {
-    order: -2;
-    width: 600px;
+    order: 0;
+    height: 183px;
+    width: 50%;
     align-self: flex-end;
-    margin-top: -86px;
+    margin-top: -197px;
+    align-self: flex-end;
     outline: yellow solid thick;
   }
 }

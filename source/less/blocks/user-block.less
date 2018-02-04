@@ -8,9 +8,14 @@
   .user-block {
     display: flex;
     flex-direction: column;
-    width: 300px;
     margin: 25px 0px;
     outline: aquamarine solid thin;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .user-block:not(.panorama) {
+    width: 300px;
   }
 }
 
@@ -18,7 +23,6 @@
   .panorama {
     display: flex;
     flex-direction: column;
-    width: 660px;
     margin: 25px 0px;
     outline: purple solid thin;
   }
@@ -26,7 +30,7 @@
 
 @media (min-width: @tablet-width) {
   .user-block__picture img {
-    width: 12000px;
+    width: 1200px;
     height: 506px;
     outline: aquamarine solid thin;
   }
@@ -72,7 +76,6 @@
   .panorama {
     display: flex;
     flex-direction: column;
-    width: 1200px;
     margin: 25px 0px;
     outline: purple solid thin;
   }
@@ -80,7 +83,12 @@
 
 @media (min-width: @desktop-width) {
   .user-block {
-    width: 1200px;
-    margin: 25px 0px;
+    margin: 25px 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-block:not(.panorama) {
+    width: 300px;
   }
 }

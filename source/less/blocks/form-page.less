@@ -1,5 +1,4 @@
 .form-page {
-  width: 320px;
   outline: red solid thin;
   font-size: 14px;
   color: #000000;
@@ -8,20 +7,20 @@
 
 .form-page__text {
   outline: aqua solid thick;
+  padding: 20px;
+  text-align: center;
 }
 
 @media (min-width: @tablet-width){
   .form-page{
-    width: 660px;
     outline: red solid thick;
   }
 }
 
 @media (min-width: @tablet-width){
   .form-page__text {
-    order: -2;
+    order: -1;
     margin: 20px 0px;
-    width: 660px;
     outline: red solid thick;
     text-align: center;
   }
@@ -29,7 +28,7 @@
 
 @media (min-width: @desktop-width){
   .form-page{
-    width: 1200px;
+
     outline: green solid thick;
   }
 }
@@ -37,9 +36,9 @@
 @media (min-width: @desktop-width){
   .form-page__text {
     margin: 20px 0px;
-    width: 1200px;
     outline: red solid thick;
     text-align: center;
+    order: -1;
   }
 }
 

@@ -1,27 +1,33 @@
 .photo-page {
-  width: 320px;
   outline: coral solid thin;
   font-size: 14px;
   color: #000000;
   background-color: @light-color;
 }
 
+.photo__top-container {
+  outline: purple solid thick;
+}
+
 .photo__container {
-  width: 330px;
   outline: blue solid thick;
+}
+
+@media (min-width: @tablet-width) {
+.photo__top-container {
+    outline: purple solid thick;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .photo-page {
     display: flex;
     flex-direction: column;
-    width: 660px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .photo-page__text {
-    width: 420px;
     font-size: 18px;
     line-height: 30px;
     margin-top: 100px;
@@ -39,14 +45,12 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    width: 660px;
     outline: blue solid thin;
   }
 }
 
 @media (min-width: @tablet-width) {
   .photo-page__comment {
-    width: 420px;
     font-size: 18px;
     line-height: 30px;
     margin-top: 100px;
@@ -61,8 +65,12 @@
 @media (min-width: @desktop-width) {
   .photo-page {
     display: flex;
-    flex-direction: column;
-    width: 1200px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+.photo__top-container {
+    outline: purple solid thick;
   }
 }
 
@@ -74,7 +82,6 @@
 
 @media (min-width: @desktop-width) {
   .photo__container {
-    width: 1200px;
     outline: blue solid thin;
   }
 }
