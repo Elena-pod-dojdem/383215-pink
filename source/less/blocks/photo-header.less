@@ -1,6 +1,81 @@
 .photo-header {
-  background:  @bg-dark  url(@bg-path) 50% 100% no-repeat;
+  background: @bg-dark  url(@bg-path) 50% 100% no-repeat;
   outline: red solid thin;
-  margin: 0;
-  padding: 0;
+}
+
+.photo-header__logo {
+  width: 74px;
+  height: 23px;
+  font-size: 0;
+}
+
+.photo-header__title {
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-header {
+    background-color: @bg-dark;
+    background-image: url(@bg-path);
+    background-position: center -25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline: red solid thin;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-header__title {
+    margin-top: 35px;
+    padding-bottom: 90px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-header__logo {
+    margin-top: 35px;
+    margin-bottom: 90px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .photo-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: @bg-dark url("../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
+    background-size: 1200px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-header__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-header__logo {
+    width: 220px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-header__logo {
+    margin-top: 35px;
+    margin-bottom: 90px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-header__title {
+    margin-top: 80px;
+    padding-bottom: 110px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

@@ -1,8 +1,64 @@
 .main-nav {
   color: @light-color;
-  outline: pink solid thin;
-  background-color: @bg-dark;
-  font-size: 24px;
+  outline: purple solid thick;
 }
 
+.main-nav__wrapper {
+  margin: 0 auto;
+  outline: brown solid thick;
+}
 
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: white solid thick;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    display: flex;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: white solid thick;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: 900px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    width: auto;
+    height: 110px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: white solid thick;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list a {
+    text-decoration: none;
+    color: @light-color;
+  }
+}

@@ -1,8 +1,25 @@
 .photo-form {
   outline: red solid thin;
   font-size: 14px;
-  color: #000;
+  color: #000000;
   background-color: @light-color;
   padding: 5px 10px;
   border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-form {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

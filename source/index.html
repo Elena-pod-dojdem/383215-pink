@@ -3,128 +3,156 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div class="main-header__container">
-        <a href="" class="main-header__logo">
-          <img src="img/logotype-mobile.svg" width="75" height="22" alt="Pink" class="main-header__logo-image">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link">Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="photo.html" class="main-nav__link">Фотографии</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link">Конкурс</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link">HTML Academy</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+      <div class="container">
+        <div class="main-header__container">
+          <a href="" class="main-header__logo">
+            <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
+          </a>
+          <button class="main-header__toggle" type="button">Открыть меню</button>
+          <nav class="main-nav">
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__link">Главная</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="photo.html" class="main-nav__link">Фотографии</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">Конкурс</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">HTML Academy</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
     <main class="main-page">
-      <h1 class="visually-hidden">Здесь будет какой-то заголовок!</h1>
-      <section class="availability">
-        <h2 class="visually-hidden">Доступность</h2>
-        <button class="availability__toggle" type="button">Скачать приложение</button>
-        <div class="availability__info availability__info--icons">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
-      </section>
-      <section class="advantages">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <div class="advantages__item">Устали от серости мегаполиса?</div>
-        <div class="advantages__item">Нам есть, что вам предложить!</div>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h3 class="advantages__title">Поднимает настроение</h3>
-            <p class="advantages__info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Меняет мир вокруг</h3>
-            <p class="advantages__info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="advantages__item advantages__item--image">
-            <h3 class="advantages__title">Заводит новых друзей</h3>
-            <p class="advantages__info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-          </ul>
+      <div class="container">
+        <section class="availability">
+          <h2 class="visually-hidden">Доступность</h2>
+          <h3 class="availability-header">Взгляните на жизнь иначе!</h3>
+          <button class="availability__toggle" type="button">Скачать приложение</button>
+          <div class="availability__info availability__info--icons">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
         </section>
-        <section class="review">
-          <div class="review__wrapper slider">
-            <h2 class="visually-hidden">Отзывы</h2>
-            <div class="review__user-block slider">
-              <cite class="slider__author">Николай Петров</cite>
-              <p class="slider__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+        <h1 class="visually-hidden">Здесь будет какой-то заголовок!</h1>
+      </div>
+      <div class="white-block">
+        <div class="container">
+          <section class="advantages">
+            <h2 class="visually-hidden">Преимущества</h2>
+            <div class="advantages__block">
+              <div class="advantages__text">Устали от серости мегаполиса?</div>
+              <div class="advantages__text">Нам есть, что вам<br> предложить!</div>
             </div>
-            <div class="review__user-block slider">
-              <cite class="slider__author">Тут какой-то автор</cite>
-              <p class="slider__text">"Тут его цитата"</p>
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <h3 class="advantages__title">Поднимает настроение</h3>
+                <p class="advantages__info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="advantages__item">
+                <h3 class="advantages__title">Меняет мир вокруг</h3>
+                <p class="advantages__info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="advantages__item advantages__item--image">
+                <h3 class="advantages__title">Заводит новых друзей</h3>
+                <p class="advantages__info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+          </section>
+          <section class="effect">
+            <div class="effect__block">
+              <h3 class="effect__title">Эффект на 24 часа!</h3>
+              <p class="effect__text">Британские ученые провели исследования
+и доказали,<br> что положительный эффект
+от использования приложения длится
+целые сутки!св</p>
+                <a href="#" class="effect__link">Узнать больше об исследовании</a>
             </div>
-            <div class="review__user-block slider">
-              <cite class="slider__author">Тут еще один автор</cite>
-              <p class="slider__text">"И еще одна цитата"</p>
-            </div>
-            <p class="review__toggles slider__toggles">
-              <button class="slider-toggle" type="button">1</button>
-              <button class="slider-toggle" type="button">2</button>
-              <button class="slider-toggle" type="button">3</button>
-            </p>
-          </div>
-        </section>
-        <section class="plan">
-          <div class="plan__wrapper slider">
-            <div class="plan__list slider__list">
-              <div class="plan__container slider__item">
-                <h2 class="visually-hidden">План Стандартный</h2>
-                <h3 class="plan__title plan__title--hit">Стандарт</h3>
-                <div class="plan__price">3,99 usd</div>
-                <div class="plan__filter plan-item--icon">розовый фильтр</div>
-                <div class="plan__smile plan-item--icon">смайлики</div>
-                <div class="plan__comments plan-item--icon">комментарии</div>
+          </section>
+          <section class="review">
+            <div class="review__wrapper slider">
+              <h2 class="visually-hidden">Отзывы</h2>
+              <div class="review__user-block slider first">
+                <cite class="review__author">Николай Петров</cite>
+                <p class="review__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+                <p class="review__author-info">25 лет, водитель трамвая</p>
               </div>
-              <div class="plan__container slider__item">
-                <h2 class="visually-hidden">План Стандартный</h2>
-                <h3 class="plan__title">Стандарт</h3>
-                <div class="plan__price">3,99 usd</div>
-                <div class="plan__filter plan__filter--icon">розовый фильтр</div>
-                <div class="plan__smile plan__smile--icon">смайлики</div>
-                <div class="plan__comments plan__comments--icon">комментарии</div>
+              <div class="review__user-block slider second">
+                <cite class="review__author">Тут какой-то автор</cite>
+                <p class="review__text">"Тут его цитата"</p>
               </div>
-              <div class="plan__container slider__item">
-              <h2 class="visually-hidden">План Стандартный</h2>
-                <h3 class="plan__title">Стандарт</h3>
-                <div class="plan__price">3,99 usd</div>
-                <div class="plan__filter plan__filter--icon">розовый фильтр</div>
-                <div class="plan__smile plan__smile--icon">смайлики</div>
-                <div class="plan__comments plan__comments--icon">комментарии</div>
+              <div class="review__user-block slider third">
+                <cite class="review__author">Тут еще один автор</cite>
+                <p class="review__text">"И еще одна цитата"</p>
               </div>
-              <p class="plan__toggles slider__toggles">
+              <p class="review__toggles slider__toggles">
                 <button class="slider-toggle" type="button">1</button>
                 <button class="slider-toggle" type="button">2</button>
                 <button class="slider-toggle" type="button">3</button>
               </p>
             </div>
-          </div>
-        </section>
+          </section>
+          <section class="plan">
+            <div class="plan__slider">
+              <div class="plan__slider-inner">
+                <div class="plan__slider-slides">
+                  <div class="plan__content-container hidden">
+                    <p class="plan__title">Стандарт</p>
+                    <div class="plan__features">Розовый фильтр</div>
+                    <div class="plan__features">Смайлики</div>
+                    <div class="plan__features">Комментарии</div>
+                  </div>
+                  <div class="plan__content-container">
+                    <div class="plan__title">Стандарт</div>
+                    <p class="plan__features">Розовый фильтр</p>
+                    <p class="plan__features">Смайлики</p>
+                    <p class="plan__features">Комментарии</p>
+                  </div>
+                  <div class="plan__content-container">
+                    <div class="plan__title">База</div>
+                    <p class="plan__features">Розовый фильтр</p>
+                    <p class="plan__features">Смайлики</p>
+                    <p class="plan__features">Комментарии</p>
+                  </div>
+                  <div class="plan__content-container">
+                    <div class="plan__title">Анлим</div>
+                    <p class="plan__features">Розовый фильтр</p>
+                    <p class="plan__features">Смайлики</p>
+                    <p class="plan__features">Комментарии</p>
+                  </div>
+                </div>
+              </div>
+              <input type="radio" id="btn-1" class="btn-1" name="toggle">
+              <input type="radio" class="btn-2" id="btn-2" name="toggle" checked>
+              <input type="radio" class="btn-3" id="btn-3" name="toggle">
+              <div class="plan__slider-controls">
+                <label for="btn-1"></label>
+                <label for="btn-2"></label>
+                <label for="btn-3"></label>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__container">
+      <div class="container">
         <div class="main-footer__contacts">
           <div class="main-footer__text">
             <b class="main-footer__question">Остались вопросы?</b>
             <b class="main-footer__offer">Свяжитесь с нами!</b>
           </div>
           <div class="main-footer__phone">
-            <p class="main-footer__text">Звоните:</p>
+            <p class="main-footer__phrase">Звоните:</p>
             <span class="main-footer__mobile">+7(812)555-66-66</span>
           </div>
           <div class="main-footer__email">
@@ -136,7 +164,31 @@
             <p class="main-footer__adress-street">ул. Большая Конюшенная, 19/8</p>
           </div>
           <div class="main-footer__map">
-            <img src="img/map.png" width="100%" class="map" height="" alt="Карта">
+            <img src="../img/bg-map-mobile@1x.png" width="100%" class="map" height="380" alt="Карта">
+          </div>
+        </div>
+        <div class="main-footer__container">
+          <a href="" class="footer__logo">
+            <img src="img/logotype-mobile.svg" width="147" height="40" alt="Pink" class="footer-logo__image">
+          </a>
+          <div class="footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="https://twitter.com/htmlacademy" class="social__link social__link--twitter">twitter</a>
+              </li>
+              <li class="social__item">
+                <a href="https://facebook.com/htmlacademy" class="social__link social__link--facebook">facebook</a>
+              </li>
+              <li class="social__item">
+                <a href="https://youtube.com/htmlacademy" class="social__link social__link--youtube">youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="website-by">
+            <p class="website-by_text">Разработано</p>
+            <a href="#" class="website-by__link">htmlacademy
+              <img src="img/htmlacademy.png" class="website-by__logo" alt="htmlacademy" width="27" height="34">
+            </a>
           </div>
         </div>
       </div>

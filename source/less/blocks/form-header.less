@@ -1,6 +1,91 @@
 .form-header {
-  background:  @bg-dark  url(@bg-path) 50% 100% no-repeat;
+  background: @bg-dark  url(@bg-path) 50% 0 no-repeat;
   outline: red solid thin;
   margin: 0;
   padding: 0;
+}
+
+.form-header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  outline: yellow solid thick;
+}
+
+.form-header__logo {
+  margin: 15px;
+  outline: pink solid thick;
+}
+
+.form-header__toggle {
+  display: none;
+  outline: red solid thin;
+}
+
+.form-header__title {
+  text-align: center;
+  font-weight: 400;
+}
+
+@media (min-width: @tablet-width) {
+  .form-header {
+    background-size: 660px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-header__logo {
+    margin: 10px;
+    outline: coral solid thick;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: @bg-dark url("../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
+    background-size: 1200px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-header__container {
+    outline: coral solid thin;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-header__logo {
+    width: 385px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-header__title {
+    height: 300px;
+    padding-top: 150px;
+    outline: pink solid thin;
+  }
 }

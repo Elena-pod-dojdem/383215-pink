@@ -1,7 +1,27 @@
 .adress {
-  outline: blue solid thin;
-  padding: 10px 2px;
+  outline: blue solid thick;
   margin: 10px 0;
   font: inherit;
   border: none;
+}
+
+.adress-container {
+  outline: aquamarine solid thin;
+}
+
+.adress__label {
+  outline: red solid thin;
+}
+
+@media (min-width: @tablet-width) {
+  .adress {
+    order: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .adress {
+    order: 1;
+    outline: green solid thick;
+  }
 }

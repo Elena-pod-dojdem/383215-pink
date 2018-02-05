@@ -1,7 +1,87 @@
 .photo-page {
-  width: 320px;
   outline: coral solid thin;
   font-size: 14px;
-  color: #000;
+  color: #000000;
   background-color: @light-color;
+}
+
+.photo__top-container {
+  outline: purple solid thick;
+}
+
+.photo__container {
+  outline: blue solid thick;
+}
+
+@media (min-width: @tablet-width) {
+  .photo__top-container {
+    outline: purple solid thick;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-page {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-page__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 100px;
+    margin-bottom: 85px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: red solid thin;
+    text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    outline: blue solid thin;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-page__comment {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 100px;
+    margin-bottom: 85px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: red solid thin;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-page {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo__top-container {
+    outline: purple solid thick;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-page__text {
+    width: 605px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo__container {
+    outline: blue solid thin;
+  }
 }

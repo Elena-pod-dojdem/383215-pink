@@ -2,7 +2,82 @@
   color: @dark-color;
   background-color: @bg-light;
   font-size: 14px;
-  margin: 20px 0;
   padding: 5px 5px;
   outline: brown solid thin;
+}
+
+.review__author-info {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .review {
+    width: 660px;
+    padding: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .review__user-block {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .review__author {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .review__text {
+    width: 620px;
+    padding: 0;
+    order: -1;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .review__author-info {
+    display: block;
+    width: 195px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .second {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .third {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .review__toggles {
+    display: inline-block;
+    margin-left: 285px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review {
+    width: 1200px;
+    padding: 0;
+  }
 }

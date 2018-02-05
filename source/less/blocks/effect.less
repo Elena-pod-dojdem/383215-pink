@@ -1,0 +1,36 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .effect {
+    display: block;
+    outline: red solid thin;
+    background-color: @bg-light;
+    padding-bottom: 120px;
+    padding-top: 90px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .effect__block {
+    width: 320px;
+    outline: yellow solid thin;
+    margin-left: 295px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect {
+    display: block;
+    outline: yellow solid thin;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect__block {
+    width: 410px;
+    outline: yellow solid thin;
+    margin-left: 485px;
+  }
+}

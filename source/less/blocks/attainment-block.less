@@ -1,7 +1,75 @@
 .attainment-block {
-  width: 280px;
-  outline: brown solid thin;
-  padding: 10px 2px;
+  outline: aquamarine solid thick;
   font: inherit;
   border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .attainment-block {
+    order: 3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attainment-block {
+    outline: purple solid thin;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attainment-header {
+    outline: purple solid thin;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attainment-wrapper {
+    outline: purple solid thin;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attainment-container {
+    outline: purple solid thin;
+    width: 300px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .shark {
+    order: -6;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .beach {
+    order: -2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .norris {
+    order: -4;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .souvenir {
+    order: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tower {
+    order: -4;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hotel {
+    order: -1;
+  }
 }

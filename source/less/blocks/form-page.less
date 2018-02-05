@@ -1,7 +1,42 @@
 .form-page {
-  width: 320px;
   outline: red solid thin;
   font-size: 14px;
-  color: #000;
+  color: #000000;
   background-color: @light-color;
+}
+
+.form-page__text {
+  outline: aqua solid thick;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .form-page {
+    outline: red solid thick;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-page__text {
+    order: -1;
+    margin: 20px 0;
+    outline: red solid thick;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-page {
+    outline: green solid thick;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-page__text {
+    margin: 20px 0;
+    outline: red solid thick;
+    text-align: center;
+    order: -1;
+  }
 }

@@ -1,6 +1,28 @@
 .photo-nav {
   color: @light-color;
   outline: pink solid thin;
-  background-color: @bg-dark;
   font-size: 24px;
+}
+
+.photo-nav__toggle {
+  display: none;
+}
+
+@media (min-width: @desktop-width) {
+  .photo-nav__list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-list__item a {
+    display: inline-block;
+    text-decoration: none;
+    color: @light-color;
+    margin-top: 30px;
+  }
 }
