@@ -1,6 +1,6 @@
 .main-header {
   outline: red solid thin;
-  background: @bg-dark  url(@bg-path) 100% 0px no-repeat;
+  background: @bg-dark  url(@bg-path) 100% 0 no-repeat;
 }
 
 .main-header__container {
@@ -21,16 +21,16 @@
 
 @media (min-width: @tablet-width) {
   .main-header {
-    background: @bg-dark url(@bg-path) 0px 0px no-repeat;
+    background: @bg-dark url(@bg-path) 0 0 no-repeat;
     background-size: 660px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .main-header__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -51,7 +51,7 @@
   .main-header {
     display: flex;
     flex-wrap: wrap;
-    background: @bg-dark url("../img/bg-back-mobile@1x.jpg") 0px 0px no-repeat;
+    background: @bg-dark url("../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
     background-size: 1200px;
   }
 }

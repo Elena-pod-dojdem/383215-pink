@@ -1,5 +1,5 @@
 .form-header {
-  background: @bg-dark  url(@bg-path) 50% 0px no-repeat;
+  background: @bg-dark  url(@bg-path) 50% 0 no-repeat;
   outline: red solid thin;
   margin: 0;
   padding: 0;
@@ -54,18 +54,12 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  .form-header__title {
-//
-  }
-}
-
 @media (min-width: @desktop-width) {
   .form-header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background: @bg-dark url("../img/bg-back-mobile@1x.jpg") 0px 0px no-repeat;
+    background: @bg-dark url("../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
     background-size: 1200px;
   }
 }
