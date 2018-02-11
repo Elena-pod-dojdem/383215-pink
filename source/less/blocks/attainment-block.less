@@ -1,42 +1,121 @@
 .attainment-block {
-  outline: aquamarine solid thick;
-  font: inherit;
+  position: relative;
   border: none;
+  text-align: center;
+  align-self: center;
+  margin: 40px 0 0 0;
+  padding-top: 50px;
+  background-color: #f2f2f2;
+  color: #d22856;
+}
+
+.attainment-header {
+  padding-top: 35px;
+  text-transform: uppercase;
+  color: #d22856;
+  position: absolute;
+  width: 195px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.attainment-wrapper {
+  color: @dark-color;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.attainment__container {
+  display: inline-flex;
+  padding: 10px;
+  font: inherit;
+  margin-bottom: 10px;
+  color: @dark-color;
+  width: 280px;
+}
+
+.attainment__container span {
+  text-transform: none;
+}
+
+.attainment__label {
+  font-size: 0;
+}
+
+.attainment__input {
+  margin-right: 20px;
 }
 
 @media (min-width: @tablet-width) {
   .attainment-block {
+    width: 620px;
     order: 3;
+    align-self: center;
+    border: 2px solid #e5e5e5;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #d22856;
+    background-color: #ffffff;
+    padding-top: 0;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .attainment-block {
-    outline: purple solid thin;
-  }
-}
-
-@media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
   .attainment-header {
-    outline: purple solid thin;
+    padding: 0 15px;
+    width: 490px;
+    margin-top: -10px;
+    background-color: #ffffff;
+    font-size: 18px;
+    font-weight: normal;
   }
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
   .attainment-wrapper {
-    outline: purple solid thin;
     display: flex;
     flex-wrap: wrap;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .attainment-container {
-    outline: purple solid thin;
-    width: 300px;
+  .attainment__container {
+    width: 260px;
     margin-right: 20px;
+    margin-left: auto;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .attainment-block {
+    order: 3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attainment-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attainment__container {
+    width: 260px;
+    margin-right: 20px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attainment__container span {
+    text-transform: none;
+    font-size: 18px;
+  }
+}
+
 
 @media (min-width: @desktop-width) {
   .shark {

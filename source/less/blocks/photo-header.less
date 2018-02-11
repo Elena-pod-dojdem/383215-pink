@@ -1,73 +1,115 @@
 .photo-header {
-  background: @bg-dark  url(@bg-path) 50% 100% no-repeat;
-  outline: red solid thin;
+  background-color: @bg-dark;
+  background-image: url(@bg-path);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.photo-header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .photo-header__logo {
+  height: 25px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.header-logo__image {
   width: 74px;
   height: 23px;
-  font-size: 0;
+}
+
+.photo-header__toggle {
+  display: none;
 }
 
 .photo-header__title {
   text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -15px;
+  padding-bottom: 90px;
 }
 
 @media (min-width: @tablet-width) {
   .photo-header {
-    background-color: @bg-dark;
-    background-image: url(@bg-path);
-    background-position: center -25px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    outline: red solid thin;
-    margin: 0;
-    padding: 0;
+    background-size: 660px;
+    width: @tablet-width;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .photo-header__title {
-    margin-top: 35px;
-    padding-bottom: 90px;
+  .photo-header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 110px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .photo-header__logo {
-    margin-top: 35px;
-    margin-bottom: 90px;
+    margin: 25px;
   }
 }
 
+@media (min-width: @tablet-width) {
+  .header_logo-image {
+    width: 146px;
+    height: 40px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-header__title {
+    width: 525px;
+    padding-bottom: 90px;
+    padding-top: 70px;
+    font-size: 50px;
+    margin: 35px auto 0;
+  }
+}
 
 @media (min-width: @desktop-width) {
   .photo-header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background: @bg-dark url("../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
-    background-size: 1200px;
+    background-color: @bg-dark;
+    background-image: url(@bg-path);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: @desktop-width;
+    width: @desktop-width;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   .photo-header__container {
-    display: flex;
-    flex-wrap: wrap;
+    height: 110px;
+    width: @desktop-width;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
 @media (min-width: @desktop-width) {
   .photo-header__logo {
-    width: 220px;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .photo-header__logo {
-    margin-top: 35px;
-    margin-bottom: 90px;
+    margin: 25px;
   }
 }
 
@@ -77,5 +119,6 @@
     padding-bottom: 110px;
     margin-left: auto;
     margin-right: auto;
+    width: 420px;
   }
 }
