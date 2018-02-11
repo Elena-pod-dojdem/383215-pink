@@ -10,7 +10,7 @@
     <header class="main-header">
       <div class="main-header__container">
         <a href="" class="main-header__logo">
-          <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
+          <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink" class="main-header__image">
         </a>
         <button class="main-header__toggle" type="button">Открыть меню</button>
         <nav class="main-nav">
@@ -32,7 +32,7 @@
           </div>
         </nav>
       </div>
-      <div class="main-header__wrapper">
+      <div class="container">
         <section class="availability">
           <h2 class="visually-hidden">Доступность</h2>
           <h3 class="availability__header">Взгляните на жизнь иначе!</h3>
@@ -42,97 +42,96 @@
       </div>
     </header>
     <main class="main-page">
+      <h1 class="visually-hidden">Здесь будет какой-то заголовок!</h1>
       <div class="container">
-        <h1 class="visually-hidden">Здесь будет какой-то заголовок!</h1>
+        <section class="slogan-block">
+        <h2 class="visually-hidden">Преимущества</h2>
+          <div class="slogan-text">Устали от серости мегаполиса?</div>
+          <div class="slogan-text">Нам есть, что вам<br> предложить!</div>
+        </section>
       </div>
-      <div class="white-block">
-        <div class="container">
-          <section class="advantages">
-            <h2 class="visually-hidden">Преимущества</h2>
-            <div class="advantages__block">
-              <div class="advantages__text">Устали от серости мегаполиса?</div>
-              <div class="advantages__text">Нам есть, что вам<br> предложить!</div>
-            </div>
-            <div class="advantages__list-wrapper">
-              <ul class="advantages__list">
-                <li class="advantages__item">
-                  <h3 class="advantages__title">Поднимает настроение</h3>
-                  <p class="advantages__info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-                </li>
-                <li class="advantages__item">
-                  <h3 class="advantages__title">Меняет мир вокруг</h3>
-                  <p class="advantages__info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-                </li>
-                <li class="advantages__item advantages__item--image">
-                  <h3 class="advantages__title">Заводит новых друзей</h3>
-                  <p class="advantages__info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-                </li>
-              </ul>
-            </div>
-          </section>
-          <section class="effect">
-            <div class="effect__block">
-              <h3 class="effect__title">Эффект на 24 часа!</h3>
-              <p class="effect__text">Британские ученые провели исследования и доказали,<br> что положительный эффект от использования приложения длится целые сутки!св</p>
-                <a href="#" class="effect__link">Узнать больше об исследовании</a>
-            </div>
-          </section>
-          <section class="review">
-            <div class="review__wrapper slider">
-              <h2 class="visually-hidden">Отзывы</h2>
-              <div class="review__user-block slider first">
-                <cite class="review__author">Николай Петров</cite>
-                <p class="review__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-                <p class="review__author-info">25 лет, водитель трамвая</p>
-              </div>
-              <p class="review__toggles slider__toggles">
-                <button class="slider-toggle" type="button">1</button>
-                <button class="slider-toggle" type="button">2</button>
-                <button class="slider-toggle" type="button">3</button>
-              </p>
-            </div>
-          </section>
-          <section class="plan">
-            <div class="plan__header">
-              <ul class="plan__titles">
-                <li class="plan__title none">None</li>
-                <li class="plan__title">База</li>
-                <li class="plan__title">Стандарт</li>
-                <li class="plan__title">Анлим</li>
-              </ul>
-              <ul class="plan__price">
-                <li class="plan__cost none">Cost</li>
-                <li class="plan__cost">1,99 usd</li>
-                <li class="plan__cost">3,99 usd</li>
-                <li class="plan__cost">9,99 usd</li>
-              </ul>
-            </div>
-            <section class="content">
-              <ul class="plan__slide">
-                <li class="plan__features">Розовый фильтр</li>
-                <li class="plan__features">mark</li>
-                <li class="plan__features">Розовый фильтр</li>
-                <li class="plan__features">mark</li>
-              </ul>
-            </section>
-            <section class="content">
-              <ul class="plan__slide">
-                <li class="plan__features">Смайлики</li>
-                <li class="plan__features">mark</li>
-                <li class="plan__features">Смайлики</li>
-                <li class="plan__features">mark</li>
-              </ul>
-            </section>
-            <section class="content">
-              <ul class="plan__slide">
-                <li class="plan__features">Комментарии</li>
-                <li class="plan__features">mark</li>
-                <li class="plan__features">Комментарии</li>
-                <li class="plan__features">mark</li>
-              </ul>
-            </section>
-          </section>
+      <div class="advantages__wrapper">
+        <div class="advantages__image-container">
+          <img src="img/iphone-screen-mobile@1x.png" alt="iphone" class="advantages__image">
         </div>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Поднимает настроение</h3>
+            <p class="advantages__info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="advantages__item advantages__item--image">
+            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <p class="advantages__info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </div>
+      <section class="effect">
+        <div class="effect__block">
+          <h3 class="effect__title">Эффект на 24 часа!</h3>
+          <p class="effect__text">Британские ученые провели исследования и доказали,<br> что положительный эффект от использования приложения длится целые сутки!св</p>
+            <a href="#" class="effect__link">Узнать больше об исследовании</a>
+        </div>
+      </section>
+      <section class="review">
+        <div class="review__wrapper slider">
+          <h2 class="visually-hidden">Отзывы</h2>
+          <div class="review__user-block slider first">
+            <cite class="review__author">Николай Петров</cite>
+            <p class="review__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            <p class="review__author-info">25 лет, водитель трамвая</p>
+          </div>
+          <p class="review__toggles slider__toggles">
+            <button class="slider-toggle" type="button">1</button>
+            <button class="slider-toggle" type="button">2</button>
+            <button class="slider-toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+      <div class="container">
+        <section class="plan">
+          <div class="plan__header">
+            <ul class="plan__titles">
+              <li class="plan__title none">None</li>
+              <li class="plan__title">База</li>
+              <li class="plan__title">Стандарт</li>
+              <li class="plan__title">Анлим</li>
+            </ul>
+            <ul class="plan__price">
+              <li class="plan__cost none">Cost</li>
+              <li class="plan__cost">1,99 usd</li>
+              <li class="plan__cost">3,99 usd</li>
+              <li class="plan__cost">9,99 usd</li>
+            </ul>
+          </div>
+          <section class="content">
+            <ul class="plan__slide">
+              <li class="plan__features">Розовый фильтр</li>
+              <li class="plan__features">mark</li>
+              <li class="plan__features">Розовый фильтр</li>
+              <li class="plan__features">mark</li>
+            </ul>
+          </section>
+          <section class="content">
+            <ul class="plan__slide">
+              <li class="plan__features">Смайлики</li>
+              <li class="plan__features">mark</li>
+              <li class="plan__features">Смайлики</li>
+              <li class="plan__features">mark</li>
+            </ul>
+          </section>
+          <section class="content">
+            <ul class="plan__slide">
+              <li class="plan__features">Комментарии</li>
+              <li class="plan__features">mark</li>
+              <li class="plan__features">Комментарии</li>
+              <li class="plan__features">mark</li>
+            </ul>
+          </section>
+        </section>
       </div>
     </main>
     <footer class="main-footer">
@@ -155,29 +154,29 @@
             <p class="main-footer__info">ул. Большая Конюшенная, 19/8</p>
           </div>
         </div>
-        <div class="main-footer__container">
-          <a href="" class="main-footer__logo">
-            <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink" class="footer-logo__image">
+      </div>
+      <div class="main-footer__container">
+        <a href="" class="main-footer__logo">
+          <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink" class="footer-logo__image">
+        </a>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="https://twitter.com/htmlacademy" class="main-footer__link social__link--twitter">twitter</a>
+            </li>
+            <li class="social__item">
+              <a href="https://facebook.com/htmlacademy" class="main-footer__link social__link--facebook">facebook</a>
+            </li>
+            <li class="social__item">
+              <a href="https://youtube.com/htmlacademy" class="main-footer__link social__link--youtube">youtube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="website-by">
+          <p class="website-by_text">Разработано</p>
+          <a href="#" class="website-by__link">htmlacademy
+            <img src="img/htmlacademy.svg" class="website-by__logo" alt="htmlacademy" width="27" height="34">
           </a>
-          <div class="main-footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a href="https://twitter.com/htmlacademy" class="main-footer__link social__link--twitter">twitter</a>
-              </li>
-              <li class="social__item">
-                <a href="https://facebook.com/htmlacademy" class="main-footer__link social__link--facebook">facebook</a>
-              </li>
-              <li class="social__item">
-                <a href="https://youtube.com/htmlacademy" class="main-footer__link social__link--youtube">youtube</a>
-              </li>
-            </ul>
-          </div>
-          <div class="website-by">
-            <p class="website-by_text">Разработано</p>
-            <a href="#" class="website-by__link">htmlacademy
-              <img src="img/htmlacademy.svg" class="website-by__logo" alt="htmlacademy" width="27" height="34">
-            </a>
-          </div>
         </div>
       </div>
     </footer>
