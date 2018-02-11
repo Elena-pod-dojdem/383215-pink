@@ -2,8 +2,40 @@
   color: @dark-color;
   background-color: @bg-light;
   font-size: 14px;
-  padding: 5px 5px;
   outline: brown solid thin;
+}
+
+.review__wrapper {
+  padding-top: 305px;
+  background-color: #f1f1f1;
+  outline: brown solid thin;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.review__user-block {
+  margin-top: -20px;
+  background-color: #ffffff;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.review__author {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 16px;
+}
+
+.review__text {
+  width: 280px;
+  margin: auto;
+  padding-top: 16px;
+  padding-bottom: 120px;
+}
+
+.review__toggles {
+  display: none;
 }
 
 .review__author-info {
@@ -79,5 +111,47 @@
   .review {
     width: 1200px;
     padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review__wrapper {
+    padding-top: 305px;
+    background-color: #f1f1f1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review__user-block {
+    margin-top: -305px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review__text {
+    padding-bottom: 23px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review__author {
+    padding-top: 23px;
+    padding-bottom: 10px;
+    font-size: 21px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review__author-info {
+    padding-top: 5px;
+    padding-bottom: 45px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review__toggles {
+    display: none;
   }
 }

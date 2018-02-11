@@ -4,16 +4,24 @@
   color: @dark-color;
   font-size: 14px;
   padding: 5px 5px;
-  outline: coral solid thin;
   margin: 0 auto;
   padding-top: 40px;
+  margin-top: 400px;
 }
 
-.availability-header {
+.availability__header {
   display: none;
 }
 
 .availability__toggle {
+  height: 50px;
+  border: 3px solid #ffffff;
+  border-radius: 20px;
+  background-color: transparent;
+  color: @light-color;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 50px;
   margin-bottom: 35px;
   margin-left: auto;
   margin-right: auto;
@@ -23,7 +31,10 @@
   outline: white dotted thin;
   color: @light-color;
   text-align: center;
-  margin-bottom: 30px;
+  width: 280px;
+  align-self: center;
+  padding-top: 85px;
+  padding-bottom: 30px;
 }
 
 @media (min-width: @tablet-width) {
@@ -32,17 +43,35 @@
     padding: 40px 20px;
     outline: yellow solid thin;
     margin-right: 320px;
+    margin-top: 90px;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .availability-header {
+  .availability__header {
     display: block;
     padding: 90px 0 20px 0;
     outline: yellow solid thin;
     color: @light-color;
+    font-size: 40px;
     font-weight: normal;
     text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .availability__toggle {
+    height: 50px;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+    background-color: transparent;
+    color: @light-color;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 50px;
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -50,7 +79,7 @@
   .availability {
     display: flex;
     flex-direction: column;
-    color: @dark-color;
+    color: @light-color;
     font-size: 14px;
     padding: 5px 5px;
     width: 450px;
@@ -61,10 +90,39 @@
 }
 
 @media (min-width: @desktop-width) {
-  .availability-header {
+  .availability__header {
     outline: yellow solid thin;
     color: @light-color;
+    font-size: 50px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .availability__toggle {
+    height: 50px;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+    background-color: transparent;
+    color: @light-color;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 12px 50px;
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .availability__info {
+    outline: white dotted thin;
+    color: @light-color;
+    text-align: center;
+    width: 280px;
+    align-self: center;
+    padding-top: 85px;
+    margin-bottom: 125px;
   }
 }

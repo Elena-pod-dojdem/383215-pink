@@ -1,28 +1,44 @@
 .main-header {
-  outline: red solid thin;
-  background: @bg-dark  url(@bg-path) 100% 0 no-repeat;
+  background-color: @bg-dark;
+  background-image: url(@bg-path);
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: @mobile-width;
+  margin: 0 auto;
 }
 
 .main-header__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  outline: yellow solid thick;
+  height: 65px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .main-header__logo {
+  height: 25px;
+  padding: 10px;
   margin: 10px;
-  outline: pink solid thick;
 }
 
 .main-header__toggle {
-  outline: red solid thin;
+  display: none;
+}
+
+.main-header__wrapper {
+  width: 280px;
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
   .main-header {
-    background: @bg-dark url(@bg-path) 0 0 no-repeat;
+    background-color: @bg-dark;
+    background-image: url(@bg-path);
+    background-position: top center;
+    background-repeat: no-repeat;
     background-size: 660px;
+    width: @tablet-width;
+    margin: 0 auto;
   }
 }
 
@@ -37,7 +53,6 @@
 @media (min-width: @tablet-width) {
   .main-header__logo {
     margin: 10px;
-    outline: coral solid thick;
   }
 }
 
@@ -47,25 +62,40 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .main-header__wrapper {
+    width: 360px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .main-header {
-    display: flex;
-    flex-wrap: wrap;
-    background: @bg-dark url("../img/bg-back-mobile@1x.jpg") 0 0 no-repeat;
+    background-color: @bg-dark;
+    background-image: url(@bg-path);
+    background-position: top center;
+    background-repeat: no-repeat;
     background-size: 1200px;
+    width: @desktop-width;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-header__container {
     height: 110px;
-    outline: coral solid thick;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__wrapper {
+    width: 370px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-header__logo {
     padding-left: 70px;
+    margin: 0;
   }
 }
 

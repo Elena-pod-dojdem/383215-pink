@@ -24,6 +24,7 @@
   .effect {
     display: block;
     outline: yellow solid thin;
+    background-color: #f1f1f1;
   }
 }
 
@@ -32,5 +33,25 @@
     width: 410px;
     outline: yellow solid thin;
     margin-left: 485px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect__title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect__text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect__link {
+    font-size: 18px;
+    color: red;
   }
 }

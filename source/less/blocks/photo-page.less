@@ -1,28 +1,37 @@
 .photo-page {
-  outline: coral solid thin;
   font-size: 14px;
   color: #000000;
   background-color: @light-color;
+  width: @mobile-width;
+  margin: 0 auto;
 }
 
 .photo__top-container {
-  outline: purple solid thick;
+  width: @mobile-width;
 }
 
-.photo__container {
-  outline: blue solid thick;
+.photo-page__text {
+  padding: 20px;
+  text-align: center;
 }
 
-@media (min-width: @tablet-width) {
-  .photo__top-container {
-    outline: purple solid thick;
-  }
+.photo-page__comment {
+  margin: 50px 0;
+  text-align: center;
 }
 
 @media (min-width: @tablet-width) {
   .photo-page {
     display: flex;
     flex-direction: column;
+    width: @tablet-width;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo__top-container {
+    width: @tablet-width;
   }
 }
 
@@ -34,7 +43,6 @@
     margin-bottom: 85px;
     margin-left: auto;
     margin-right: auto;
-    outline: red solid thin;
     text-align: center;
   }
 }
@@ -45,7 +53,6 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    outline: blue solid thin;
   }
 }
 
@@ -53,35 +60,41 @@
   .photo-page__comment {
     font-size: 18px;
     line-height: 30px;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-bottom: 85px;
     margin-left: auto;
     margin-right: auto;
-    outline: red solid thin;
     text-align: center;
+    width: 430px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .photo-page {
     display: flex;
+    width: @desktop-width;
   }
 }
 
 @media (min-width: @desktop-width) {
   .photo__top-container {
-    outline: purple solid thick;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .photo-page__text {
-    width: 605px;
+    width: @desktop-width;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .photo__container {
-    outline: blue solid thin;
+  .photo-page__text {
+    width: 605px;
+    margin: 20px auto;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-page__comment {
+    margin-top: 70px;
+    text-align: center;
+    width: 430px;
   }
 }

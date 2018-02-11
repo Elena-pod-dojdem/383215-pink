@@ -1,18 +1,13 @@
 .form-nav {
+  display: none;
   color: @light-color;
-  outline: pink solid thin;
   font-size: 24px;
-}
-
-.form-nav__wrapper {
-  outline: brown solid thick;
 }
 
 .form-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  outline: white solid thick;
 }
 
 @media (min-width: @tablet-width) {
@@ -34,13 +29,14 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    outline: white solid thick;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form-nav {
-    outline: yellow solid thin;
+    display: block;
+    width: 735px;
+    margin: 0;
   }
 }
 
@@ -57,10 +53,11 @@
   .form-nav__list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 735px;
     margin: 0;
     padding: 0;
     list-style: none;
-    outline: white solid thick;
   }
 }
 

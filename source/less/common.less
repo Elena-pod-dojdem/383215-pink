@@ -3,8 +3,28 @@
 @bg-path: "../img/bg-back-mobile@1x.jpg";
 @light-color: #ffffff;
 @dark-color: #000000;
+@mobile-width: 320px;
 @tablet-width: 660px;
-@desktop-width: 1200px;
+@desktop-width: 960px;
+
+/*@media (min-width: @tablet-width) {
+  .wide-container {
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+//    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .wide-container {
+    display: block;
+    outline: pink solid thick;
+  }
+}*/
 
 @font-face {
   font-family: "Open Sans";
@@ -44,32 +64,20 @@ img {
 }
 
 .container {
-  width: 320px;
-  margin: 0 auto;
-
-  @media (min-width: @tablet-width) {
-    width: 660px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1200px;
-    margin: 0 auto;
-  }
+  width: 280px;
+  margin: 0 20px;
 }
 
-/*@media (min-width: @tablet-width) {
-  body {
-    width: 660px;
-    background-color: @bg-dark;
-    outline: red solid thick;
+@media (min-width: @tablet-width) {
+  .container {
+    width: 620px;
+    margin: 0 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  body {
-    width: 1200px;
-    background-color: @bg-dark;
-    outline: green solid thick;
+  .container {
+    width: 940px;
+    margin: 0 10px;
   }
-}*/
+}
