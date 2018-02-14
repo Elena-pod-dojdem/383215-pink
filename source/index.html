@@ -95,43 +95,75 @@
       <div class="container">
         <section class="plan">
           <div class="plan__header">
-            <ul class="plan__titles">
-              <li class="plan__title none">None</li>
-              <li class="plan__title">База</li>
-              <li class="plan__title">Стандарт</li>
-              <li class="plan__title">Анлим</li>
-            </ul>
-            <ul class="plan__price">
-              <li class="plan__cost none">Cost</li>
-              <li class="plan__cost">1,99 usd</li>
-              <li class="plan__cost">3,99 usd</li>
-              <li class="plan__cost">9,99 usd</li>
-            </ul>
+            <div class="plan__title none">
+              <span>None</span>
+            </div>
+            <div class="plan__title">
+              <span class="plan__span">База</span>
+            </div>
+            <div class="plan__title">
+              <span>Стандарт</span>
+            </div>
+            <div class="plan__title">
+              <span>Анлим</span>
+            </div>
           </div>
-          <section class="content">
-            <ul class="plan__slide">
-              <li class="plan__features">Розовый фильтр</li>
-              <li class="plan__features">mark</li>
-              <li class="plan__features">Розовый фильтр</li>
-              <li class="plan__features">mark</li>
-            </ul>
-          </section>
-          <section class="content">
-            <ul class="plan__slide">
-              <li class="plan__features">Смайлики</li>
-              <li class="plan__features">mark</li>
-              <li class="plan__features">Смайлики</li>
-              <li class="plan__features">mark</li>
-            </ul>
-          </section>
-          <section class="content">
-            <ul class="plan__slide">
-              <li class="plan__features">Комментарии</li>
-              <li class="plan__features">mark</li>
-              <li class="plan__features">Комментарии</li>
-              <li class="plan__features">mark</li>
-            </ul>
-          </section>
+          <div class="plan__price">
+            <div class="plan__cost none">
+              <span>Cost</span>
+            </div>
+            <div class="plan__cost">
+              <span>1,99 usd</span>
+            </div>
+            <div class="plan__cost">
+              <span>3,99 usd</span>
+            </div>
+            <div class="plan__cost">
+              <span>9,99 usd</span>
+            </div>
+          </div>
+          <div class="filter">
+              <div class="filter__features">
+                <span>Розовый фильтр</span>
+              </div>
+              <div class="filter__features mark-yes">
+                <span>yes</span>
+              </div>
+              <div class="filter__features mark-yes">
+                <span>yes</span>
+              </div>
+              <div class="filter__features mark-yes">
+                <span>yes</span>
+              </div>
+          </div>
+          <div class="smile">
+              <div class="smile__features">
+                <span>Смайлики</span>
+              </div>
+              <div class="smile__features mark-no">
+                <span>no</span>
+              </div>
+              <div class="smile__features mark-yes">
+                <span>yes</span>
+              </div>
+              <div class="smile__features mark-yes">
+                <span>yes</span>
+              </div>
+          </div>
+          <div class="comments">
+              <div class="comments__features">
+                <span>Комментарии</span>
+              </div>
+              <div class="comments__features mark-no">
+                <span>no</span>
+              </div>
+              <div class="comments__features mark-no">
+                <span>no</span>
+              </div>
+              <div class="comments__features mark-yes">
+                <span>yes</span>
+              </div>
+          </div>
         </section>
       </div>
     </main>
@@ -156,7 +188,10 @@
       </div>
       <div class="main-footer__container">
         <a href="" class="main-footer__logo">
-          <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink" class="footer-logo__image">
+          <picture>
+            <source media ="(min-width:960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink" class="footer-logo__image">
+          </picture>
         </a>
         <div class="main-footer__social social">
           <ul class="social__list">
