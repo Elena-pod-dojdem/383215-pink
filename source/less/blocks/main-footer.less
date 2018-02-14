@@ -1,11 +1,11 @@
 .main-footer {
   background-color: @light-color;
   background-image: url("../img/bg-map-mobile@1x.png");
-  background-position: top center;
+  background-size: 320px 645px;
+  background-position: bottom center;
   background-repeat: no-repeat;
   color: @dark-color;
-  outline: red solid thin;
-  padding: 0;
+  padding-bottom: 200px;
   margin-top: -23px;
 }
 
@@ -25,7 +25,6 @@
   width: 280px;
   text-align: center;
   margin: auto;
-  outline: purple solid thin;
 }
 
 .main-footer__title {
@@ -61,12 +60,11 @@
 
 @media (min-width: @tablet-width) {
   .main-footer {
-    background-image: url("../img/bg-map-mobile@1x.png");
+    background-image: url("../img/bg-map-tablet@1x.jpg");
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: 660px;
+    background-size: 700px 848px;
     color: @dark-color;
-    outline: red solid thin;
     padding: 0;
     width: 660px;
     margin: 0 auto;
@@ -80,13 +78,6 @@
   }
 }
 
-/*@media (min-width: @tablet-width) {
-  .main-footer {
-    background: @bg-light url("../img/bg-bacbg-map-mobile@1x.png") 0px 0px no-repeat;
-    background-size: 1200px;
-  }
-}*/
-
 @media (min-width: @tablet-width) {
   .main-footer__phrase {
     font-size: 40px;
@@ -98,34 +89,29 @@
   .main-footer__text {
     height: 185px;
     flex-basis: 100%;
-    outline: brown solid thin;
   }
 }
 
 @media (min-width: @tablet-width) {
   .main-footer__phone {
     flex-basis: 50%;
-    outline: brown solid thin;
   }
 }
 
 @media (min-width: @tablet-width) {
   .main-footer__email {
     flex-basis: 50%;
-    outline: brown solid thin;
   }
 }
 
 @media (min-width: @tablet-width) {
   .main-footer__adress {
     flex-basis: 100%;
-    outline: brown solid thin;
   }
 }
 
 @media (min-width: @tablet-width) {
   .main-footer__social {
-    outline: green solid thin;
     width: 320px;
   }
 }
@@ -147,7 +133,7 @@
 
 @media (min-width: @tablet-width) {
   .social__link--twitter {
-    background-image: url("../img/bg-map-mobile@1x.png");
+//    background-image: url("../img/bg-map-mobile@1x.png");
     background-position: top center;
     background-repeat: no-repeat;
   }
@@ -158,14 +144,12 @@
     height: 380px;
     flex-basis: 100%;
     overflow: hidden;
-    outline: brown solid thin;
   }
 }
 
 @media (min-width: @tablet-width) {
   .main-footer__container {
     display: flex;
-    outline: brown solid thin;
     margin-top: 239px;
     height: 130px;
     background-color: #ffffff;
@@ -177,21 +161,18 @@
     width: 170px;
     padding-top: 35px;
     text-align: center;
-    outline: brown solid thin;
   }
 }
 
 @media (min-width: @tablet-width) {
   .footer__social {
     width: 320px;
-    outline: brown solid thin;
   }
 }
 
 @media (min-width: @tablet-width) {
   .website-by {
     width: 170px;
-    outline: brown solid thin;
   }
 }
 
@@ -199,6 +180,20 @@
   .main-footer {
     width: 960px;
     margin: 0 auto;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+    background-size: 1200px 976px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+
+      @media (min-width: 960px) and (min-resolution: 144dpi),
+       (min-width: 960px) and (min-resolution: 1.5dppx) {
+    .main-footer {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+      background-size: 2400px 1952px;
+      background-repeat: no-repeat;
+      background-position:  bottom center;
+    }
   }
 }
 
@@ -214,7 +209,6 @@
   .main-footer__text {
     height: 170px;
     justify-content: space-between;
-    outline: red solid thin;
     text-align: center;
   }
 }
@@ -224,7 +218,6 @@
   .main-footer__block {
     flex-basis: 30%;
     height: 170px;
-    outline: red solid thin;
     text-align: center;
   }
 }
@@ -233,16 +226,6 @@
   .main-footer__block {
     flex-basis: 30%;
     height: 170px;
-    outline: red solid thin;
-    text-align: center;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .main-footer__block {
-    flex-basis: 30%;
-    height: 170px;
-    outline: red solid thin;
     text-align: center;
   }
 }
@@ -251,7 +234,6 @@
   .main-footer__map {
     width: 1200px;
     height: 400px;
-    outline: green solid thin;
   }
 }
 
@@ -260,6 +242,7 @@
   .main-footer__container {
     display: flex;
     justify-content: space-between;
+    margin-top: 500px;
   }
 }
 
@@ -267,20 +250,17 @@
 @media (min-width: @desktop-width) {
   .main-footer__logo {
     flex-basis: 30%;
-    outline: brown solid thin;
   }
 }
 
 @media (min-width: @desktop-width) {
   .footer__social {
     flex-basis: 30%;
-    outline: brown solid thin;
   }
 }
 
 @media (min-width: @desktop-width) {
   .website-by {
     flex-basis: 30%;
-    outline: brown solid thin;
   }
 }

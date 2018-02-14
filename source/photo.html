@@ -10,7 +10,11 @@
     <header class="photo-header">
       <div class="photo-header__container">
         <a href="" class="photo-header__logo">
-          <img src="img/logo-pink-white-mobile.svg" width="146" height="40" alt="Pink" class="header-logo__image">
+          <picture>
+            <source media ="(min-width:960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media ="(min-width:640px)" srcset="img/logo-pink-white-tablet.svg">
+            <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink" class="photo-logo__image">
+          </picture>
         </a>
         <button class="photo-header__toggle" type="button">Открыть меню</button>
         <nav class="photo-nav">
@@ -42,7 +46,11 @@
         <p class="photo-page__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <section class="panorama">
           <a class="panorama__picture">
-            <img src="img/panorama-mobile@1x.jpg" alt="photo" width="960" height="510" class="panorama__photo">
+            <picture>
+              <source media ="(min-width:960px)" srcset="img/panorama-desktop@1x.jpg 1x, panorama-desktop@2x.jpg 2x">
+              <source media ="(min-width:640px)" srcset="img/panorama-tablet@1x.jpg 1x, panorama-tablet@2x.jpg 2x">
+              <img src="img/panorama-mobile@1x.jpg" srcset="panorama-mobile@2x.jpg 2x" alt="photo" width="320" height="137" class="panorama__photo">
+            </picture>
           </a>
           <div class="panorama-block">
             <div class="panorama__wrapper">
@@ -61,7 +69,11 @@
         <div class="photo__container">
           <section class="user-block car">
             <a class="user-block__picture">
-              <img src="img/photo-car-mobile@1x.jpg" alt="photo" width="280" height="180" class="user-block__photo">
+              <picture>
+                <source media ="(min-width:960px)" srcset="img/photo-car-desktop@1x.jpg 1x, photo-car-desktop@2x.jpg 2x">
+                <source media ="(min-width:640px)" srcset="img/photo-car-tablet@1x.jpg 1x, photo-car-tablet@2x.jpg 2x">
+                <img src="img/photo-car-mobile@1x.jpg" srcset="photo-car-mobile@2x.jpg 2x" alt="photo" width="280" height="180" class="user-block__photo">
+              </picture>
             </a>
             <div class="user-block__wrapper">
               <cite class="user-block__author">Левон</cite>
@@ -75,7 +87,11 @@
           </section>
           <section class="user-block drumset">
             <a class="user-block__picture">
-              <img src="img/photo-drumset-mobile@1x.jpg" alt="photo" width="280" height="180" class="user-block__photo">
+              <picture>
+                <source media ="(min-width:960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, photo-drumset-desktop@2x.jpg 2x">
+                <source media ="(min-width:640px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, photo-drumset-tablet@2x.jpg 2x">
+              <img src="img/photo-drumset-mobile@1x.jpg" srcset="photo-drumset-mobile@2x.jpg 2x" alt="photo" width="280" height="180" class="user-block__photo">
+              </picture>
             </a>
             <div class="user__wrapper">
               <cite class="user-block__author">Антон</cite>
@@ -89,7 +105,11 @@
           </section>
           <section class="user-block window">
             <a class="user-block__picture">
-              <img src="img/photo-window-mobile@1x.jpg" alt="photo" width="280" height="180" class="user-block__photo">
+              <picture>
+                <source media ="(min-width:960px)" srcset="img/photo-window-desktop@1x.jpg 1x, photo-window-desktop@2x.jpg 2x">
+                <source media ="(min-width:640px)" srcset="img/photo-window-tablet@1x.jpg 1x, photo-window-tablet@2x.jpg 2x">
+              <img src="img/photo-window-mobile@1x.jpg" srcset="photo-window-mobile@2x.jpg 2x" alt="photo" width="280" height="180" class="user-block__photo">
+              </picture>
             </a>
             <div class="user__wrapper">
               <cite class="user-block__author">Борис</cite>
@@ -103,7 +123,11 @@
           </section>
           <section class="user-block fair">
             <a class="user-block__picture">
-              <img src="img/photo-fair-mobile@1x.jpg" alt="photo" width="280" height="180" class="user-block__photo">
+              <picture>
+                <source media ="(min-width:960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, photo-fair-desktop@2x.jpg 2x">
+                <source media ="(min-width:640px)" srcset="img/photo-fair-tablet@1x.jpg 1x, photo-fair-tablet@2x.jpg 2x">
+              <img src="img/photo-fair-mobile@1x.jpg" srcset="photo-fair-mobile@2x.jpg 2x" alt="photo" width="280" height="180" class="user-block__photo">
+              </picture>
             </a>
             <div class="user__wrapper">
               <cite class="user-block__author">Сергей</cite>
@@ -117,7 +141,11 @@
           </section>
           <section class="user-block pov">
             <a class="user-block__picture">
-              <img src="img/photo-pov-mobile@1x.jpg" alt="photo" width="280" height="180" class="user-block__photo">
+              <picture>
+                <source media ="(min-width:960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, photo-pov-desktop@2x.jpg 2x">
+                <source media ="(min-width:640px)" srcset="img/photo-pov-tablet@1x.jpg 1x, photo-pov-tablet@2x.jpg 2x">
+                <img src="img/photo-pov-mobile@1x.jpg" srcset="photo-pov-mobile@2x.jpg 2x" alt="photo" width="280" height="180" class="user-block__photo">
+              </picture>
             </a>
             <div class="user__wrapper">
               <cite class="user-block__author">Максим</cite>
@@ -131,7 +159,11 @@
           </section>
           <section class="user-block wing">
             <a class="user-block__picture">
-              <img src="img/photo-wing-mobile@1x.jpg" alt="photo" width="280" height="180" class="user-block__photo">
+              <picture>
+                <source media ="(min-width:960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, photo-wing-desktop@2x.jpg 2x">
+                <source media ="(min-width:640px)" srcset="img/photo-wing-tablet@1x.jpg 1x, photo-wing-tablet@2x.jpg 2x">
+                <img src="img/photo-wing-mobile@1x.jpg" srcset="photo-wing-mobile@2x.jpg 2x" alt="photo" width="280" height="180" class="user-block__photo">
+              </picture>
             </a>
             <div class="user__wrapper">
               <cite class="user-block__author">Надежда</cite>
@@ -149,7 +181,11 @@
       <form action="https://echo.htmlacademy.ru" class="photo-form">
         <section class="edit-block">
           <div class="edit-block__container">
-            <img src="img/photo-road-mobile@1x.jpg" alt="your photo" width="280" height="374" class="edit-block__photo">
+            <picture>
+              <source media ="(min-width:960px)" srcset="img/photo-road-desktop@1x.jpg 1x, photo-road-desktop@2x.jpg 2x">
+              <source media ="(min-width:640px)" srcset="img/photo-road-tablet@1x.jpg 1x, photo-road-tablet@2x.jpg 2x">
+              <img src="img/photo-road-mobile@1x.jpg" srcset="photo-road-mobile@2x.jpg 2x" alt="your photo" width="280" height="374" class="edit-block__photo">
+            </picture>
           </div>
           <div class="edit__bottom-container">
             <div class="edit__buttons-container">
