@@ -1,18 +1,28 @@
 .main-header {
-  background-color: @bg-dark;
-  background-image: url(@bg-path);
-  background-position: top center;
-  background-repeat: no-repeat;
-  width: @mobile-width;
+  width: 320px;
   margin: 0 auto;
+  background-color: @bg-dark;
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url(@bg-path);
+  background-repeat: no-repeat;
+  background-position:  0 170px, top center;
+  background-size: 258px 286px, 320px 462px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image:
+        url("../img/iphone-hand-mobile@2x.png"),
+        url("../img/bg-back-mobile@2x.jpg");
+      background-size: 516px 572px, 1400px 924px;
+    }
 }
 
 .main-header__container {
+//  outline-color: azure;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 65px;
   background-color: rgba(0, 0, 0, 0.3);
+  width: @mobile-width;
+  margin: 0 auto;
 }
 
 .main-header__logo {
@@ -21,93 +31,102 @@
   margin: 10px;
 }
 
+.main-header__image {
+  width: 74px;
+  height: 23px;
+}
+
 .main-header__toggle {
   display: none;
 }
 
-.main-header__wrapper {
-  width: 280px;
-  margin: 0 auto;
-}
-
 @media (min-width: @tablet-width) {
   .main-header {
-    background-color: @bg-dark;
-    background-image: url(@bg-path);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: 660px;
-    width: @tablet-width;
+    width: 660px;
     margin: 0 auto;
+    padding-bottom: 73px;
+    background-color: @bg-dark;
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position:  -21px 176px, top center;
+    background-size: 700px 545px, 1200px 729px;
+  }
+
+  @media (min-width: 660px) and (min-resolution: 144dpi),
+       (min-width: 660px) and (min-resolution: 1.5dppx) {
+    .main-header {
+      background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1400px 1089px, 2400px 1458px;
+      background-repeat: no-repeat, no-repeat;
+      background-position:  -454px 204px, top center;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .main-header__container {
+    .main-header__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
+    background-color: rgba(0, 0, 0, 0.3);
+    width: @tablet-width;
+    margin: 0 auto;
 }
 
-@media (min-width: @tablet-width) {
-  .main-header__logo {
-    margin: 10px;
-  }
+    .main-header__logo {
+    margin: 9px 10px;
 }
 
-@media (min-width: @tablet-width) {
-  .main-header__toggle {
+    .main-header__image {
+    width: 146px;
+    height: 40px;
+}
+
+    .main-header__toggle {
     display: none;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .main-header__wrapper {
-    width: 360px;
-  }
-}
-
 @media (min-width: @desktop-width) {
   .main-header {
-    background-color: @bg-dark;
-    background-image: url(@bg-path);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: 1200px;
-    width: @desktop-width;
+    width: 960px;
     margin: 0 auto;
+    background-color: @bg-dark;
+    background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 46px 215px, -318px 0;
+    background-size: 1050px 645px, 2560px 853px;
+  }
+
+    @media (min-width: 960px) and (min-resolution: 144dpi),
+       (min-width: 960px) and (min-resolution: 1.5dppx) {
+    .main-header {
+          width: 960px;
+    margin: 0 auto;
+      background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2100px 1290px, 5120px 1706px;
+      background-repeat: no-repeat, no-repeat;
+      background-position: top center, top center;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-header__container {
     height: 110px;
+    width: @desktop-width;
+    background-color: rgba(0, 0, 0, 0.3);
   }
-}
 
-@media (min-width: @desktop-width) {
-  .main-header__wrapper {
-    width: 370px;
+    .main-header__logo {
+      margin: -3px 0 0 51px;
+      width: 146px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .main-header__logo {
-    padding-left: 70px;
-    margin: 0;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .main-header__logo img {
+    .main-header__image {
     height: 110px;
     width: 190px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .main-header__toggle {
+    .main-header__toggle {
     display: none;
   }
 }

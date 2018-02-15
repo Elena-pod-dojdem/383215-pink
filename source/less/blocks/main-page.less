@@ -1,4 +1,25 @@
 .main-page {
   font-size: 14px;
-  color: #000000;
+  color: @dark-color;
+  background-color: @bg-light;
+}
+
+@media (min-width: @tablet-width) {
+  .main-page {
+    width: 660px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: @dark-color;
+    background-color: @bg-light;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-page {
+    width: 960px;
+    margin: -38px auto 0;
+    font-size: 14px;
+    color: @dark-color;
+    background-color: @bg-light;
+  }
 }

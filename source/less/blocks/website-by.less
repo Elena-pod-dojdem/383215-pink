@@ -1,21 +1,30 @@
 .website-by {
   background: @light-color;
   color: @dark-color;
-  outline: purple solid thin;
   padding: 5px;
   font-size: 14px;
 }
 
 @media (min-width: @tablet-width) {
+  .website-by {
+    display: flex;
+  }
+
   .website-by_text {
     font-size: 14px;
-    padding-top: 51px;
-    margin: 10px 0 0 0;
+    align-self: center;
+    margin-left: auto;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .website-by__logo {
+  .website-by__link {
+    font-size: 0;
+    align-self: center;
+    margin-right: auto;
+  }
+
+    .website-by__logo {
     fill: red;
   }
 }
+
+
