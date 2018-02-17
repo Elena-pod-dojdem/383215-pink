@@ -16,29 +16,27 @@
             <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink" class="photo-logo__image">
           </picture>
         </a>
-        <button class="photo-header__toggle" type="button">Открыть меню</button>
-        <nav class="photo-nav">
+        <nav class="photo-nav photo-nav--opened photo-nav--nojs">
+          <button class="photo-nav__toggle" type="button"><span>Открыть меню</span></button>
           <div class="photo-nav__wrapper">
             <ul class="photo-nav__list site-list">
-              <li class="photo-list__item">
+              <li class="site-list__item site-list__item--active">
                 <a>Главная</a>
               </li>
-              <li class="photo-list__item">
-                <a href="photo.html">Фотографии</a>
+              <li class="site-list__item">
+                <a>Фотографии</a>
               </li>
-              <li class="photo-list__item">
+              <li class="site-list__item">
                 <a href="#">Конкурс</a>
               </li>
-              <li class="photo-list__item">
+              <li class="site-list__item">
                 <a href="#">HTML Academy</a>
               </li>
             </ul>
           </div>
         </nav>
       </div>
-      <div class="container">
-        <h1 class="photo-header__title">Фотографии пользователей</h1>
-      </div>
+      <h1 class="photo-header__title">Фотографии пользователей</h1>
     </header>
     <main class="photo-page">
       <div class="photo__top-container">
@@ -234,5 +232,21 @@
         </div>
       </div>
     </footer>
+    <script>
+  var navMain = document.querySelector('.photo-nav');
+  var navToggle = document.querySelector('.photo-nav__toggle');
+
+  navMain.classList.remove('photo-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('photo-nav--closed')) {
+      navMain.classList.remove('photo-nav--closed');
+      navMain.classList.add('photo-nav--opened');
+    } else {
+      navMain.classList.add('photo-nav--closed');
+      navMain.classList.remove('photo-nav--opened');
+    }
+  });
+    </script>
   </body>
 </html>

@@ -4,30 +4,37 @@
 @light-color: #ffffff;
 @dark-color: #000000;
 @mobile-width: 320px;
+@mobile-width-only: 310px;
 @tablet-width: 660px;
 @desktop-width: 960px;
 @retina-dpi: 144dpi;
 @retina-dppx: 1.5dppx;
 
 @font-face {
-  font-family: "Open Sans";
-  src:url("../fonts/opensans.woff"),
-    url("../fonts/opensans.woff2");
   font-weight: normal;
+  font-family: "Open Sans";
+  font-style: normal;
+  src:url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+
 }
 
 @font-face {
-  font-family: "Open Sans";
-  src:url("../fonts/opensansbold.woff"),
-    url("../fonts/opensansbold.woff");
   font-weight: bold;
+  font-family: "Open Sans";
+  font-style: normal;
+  src:url("../fonts/OpenSansBold.woff2") format("woff2"),
+    url("../fonts/OpenSansBold.woff") format("woff");
+
 }
 
 @font-face {
-  font-family: "Open Sans";
-  src:url("../fonts/opensanslight.woff"),
-    url("../fonts/opensanslight.woff");
   font-weight: light;
+  font-family: "Open Sans";
+  font-style: normal;
+  src:url("../fonts/OpenSansLight.woff2") format("woff2"),
+    url("../fonts/OpenSansLight.woff") format("woff");
+
 }
 
 html,

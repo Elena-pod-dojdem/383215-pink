@@ -10,31 +10,35 @@
     <header class="form-header">
       <div class="form-header__container">
         <a href="" class="form-header__logo">
+          <picture>
+            <source media ="(min-width:960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media ="(min-width:640px)" srcset="img/logo-pink-white-tablet.svg">
             <img src="img/logo-pink-white-mobile.svg" width="146" height="40" alt="Pink" class="form-logo__image">
+          </picture>
         </a>
-        <button class="form-header__toggle" type="button">Открыть меню</button>
-        <nav class="form-nav">
+        <nav class="form-nav form-nav--opened form-nav--nojs">
+          <button class="form-nav__toggle" type="button"><span>Открыть меню</span></button>
           <div class="form-nav__wrapper">
             <ul class="form-nav__list site-list">
-              <li class="form-list__item">
-                <a>Главная</a>
+              <li class="site-list__item site-list__item--active">
+                <a href="index.html">Главная</a>
               </li>
-              <li class="form-list__item">
-                <a href="photo.html">Фотографии</a>
+              <li class="site-list__item">
+                <a>Фотографии</a>
               </li>
-              <li class="form-list__item">
+              <li class="site-list__item">
                 <a href="#">Конкурс</a>
               </li>
-              <li class="form-list__item">
+              <li class="site-list__item">
                 <a href="#">HTML Academy</a>
               </li>
             </ul>
           </div>
         </nav>
       </div>
-      <div class="container">
+
         <h1 class="form-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      </div>
+
     </header>
     <main class="form-page">
       <form action="https://echo.htmlacademy.ru" class="form">
@@ -125,6 +129,22 @@
             <small class="form__clarification form__clarification--top"><sup>*</sup>- обязательные поля</small>
           </div>
         </div>
+        <div class="popups-container">
+          <section class="popup-application">
+            <div class="popup-application__title">Ваша заявка отправлена</div>
+            <p class="popup-application__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+            <div class="application-button__container">
+              <button class="application__button">Закрыть окно</button>
+            </div>
+          </section>
+          <section class="popup-error">
+            <div class="popup-error__title">Что-то пошло не так!</div>
+            <p class="popup-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+            <div class="popup-button__container">
+              <button class="popup-error__button">Ок</button>
+            </div>
+          </section>
+        </div>
       </form>
     </main>
     <footer class="footer">
@@ -155,5 +175,21 @@
         </div>
       </div>
     </footer>
+    <script>
+  var navMain = document.querySelector('.form-nav');
+  var navToggle = document.querySelector('.form-nav__toggle');
+
+  navMain.classList.remove('form-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('form-nav--closed')) {
+      navMain.classList.remove('form-nav--closed');
+      navMain.classList.add('form-nav--opened');
+    } else {
+      navMain.classList.add('form-nav--closed');
+      navMain.classList.remove('form-nav--opened');
+    }
+  });
+    </script>
   </body>
 </html>

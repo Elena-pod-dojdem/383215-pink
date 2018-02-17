@@ -1,0 +1,132 @@
+.site-list {
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+.site-list a {
+  display: block;
+  padding: 12px 21px;
+  padding-bottom: 13px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background-color: #283645;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+}
+
+.site-list__item:first-of-type {
+  margin-top: 50px;
+}
+
+.site-list__item {
+  background-color: #283645;
+}
+
+.site-list a[href] {
+  &:hover {
+    background-color: #283645;
+    border-top-color: #283645;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #283645;
+    border-top-color: #283645;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .site-list__item {
+    margin-right: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+        left: 0;
+
+        height: 3px;
+
+        background:#283645;
+      }
+    }
+  }
+
+  .site-list__item a {
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 23px;
+    border-top: 1px solid #485461;
+    border-bottom: 1px solid #000000;
+  }
+
+  .site-list__item a[href] {
+    &:hover {
+      color: #283645;
+
+      background-color: #000000;
+    }
+
+    &:active {
+      color: #ffffff;
+
+      background-color: #000000;
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    display: flex;
+    width: 715px;
+    margin-left: auto;
+    padding-top: 0;
+  }
+  .site-list__item {
+    display: flex;
+    height: 110px;
+    background-color: transparent;
+  }
+
+    &--active {
+    display: none;
+      }
+
+  .site-list__item:first-of-type {
+    margin-top: 0;
+  }
+
+  .site-list__item a {
+    padding-right: 31px;
+    padding-left: 31px;
+    align-self: center;
+    background-color: transparent;
+    border-top: none;
+    border-bottom: none;
+  }
+
+    &:hover {
+      color: #000000;
+      background-color: #ffffff;
+  }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+
+      background-color: #ffffff;
+      opacity: 1;
+    }
+  }
