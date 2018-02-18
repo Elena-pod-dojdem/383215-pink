@@ -7,6 +7,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div style="display: none">
+      <include src="img/sprite.svg"></include>
+    </div>
     <header class="main-header">
       <div class="main-header__container">
         <a href="" class="main-header__logo">
@@ -41,7 +44,14 @@
           <h2 class="visually-hidden">Доступность</h2>
           <h3 class="availability__header">Взгляните на жизнь иначе!</h3>
           <button class="availability__toggle" type="button">Скачать приложение</button>
-          <div class="availability__info availability__info--icons">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
+          <div class="availability__info availability__info--icons">
+            <div class="availability-logo__container">
+              <object class="availability-logo" data="img/logo-apple.svg" type="image/svg-xml" width="46" height="57">iPad</object>
+              <object class="availability-logo" data="img/logo-android.svg" type="image/svg-xml" width="42" height="47">Android</object>
+              <object class="availability-logo" data="img/logo-microsoft.svg" type="image/svg-xml" width="44" height="42">Windows Phone</object>
+            </div>
+            <p class="availability__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
         </section>
       </div>
     </header>
