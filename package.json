@@ -9,9 +9,13 @@
     "grunt": "^1.0.1",
     "grunt-browser-sync": "2.2.x",
     "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-imagemin": "^2.0.1",
     "grunt-contrib-less": "1.4.x",
     "grunt-contrib-watch": "1.0.x",
+    "grunt-cwebp": "^2.1.1",
     "grunt-postcss": "0.9.x",
+    "grunt-posthtml": "^0.5.0",
+    "grunt-svgstore": "^1.0.0",
     "load-grunt-tasks": "^3.5.2",
     "stylelint": "8.4.x",
     "stylelint-config-htmlacademy": "0.1.x"
