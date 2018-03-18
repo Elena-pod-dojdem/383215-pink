@@ -4,7 +4,6 @@
 @light-color: #ffffff;
 @dark-color: #000000;
 @mobile-width: 320px;
-@mobile-width-only: 310px;
 @tablet-width: 660px;
 @desktop-width: 960px;
 @retina-dpi: 144dpi;
@@ -50,9 +49,24 @@ img {
   height: auto;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 @media (min-width: @tablet-width) {

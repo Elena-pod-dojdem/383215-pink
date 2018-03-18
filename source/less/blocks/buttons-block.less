@@ -5,27 +5,54 @@
   padding-bottom: 30px;
   padding-top: 20px;
   background-color: #f2f2f2;
+
+  .button {
+    width: 280px;
+    margin: 10px auto;
+    height: 50px;
+    border: 2px solid #d12755;
+    background-color: #f2f2f2;
+    border-radius: 25px;
+  }
+
+  .post span {
+    font-size: 14px;
+    color: #d12755;
+  }
+
+  .cancel {
+    border: 2px solid #dddfe0;
+  }
+
+  .cancel span {
+    font-size: 14px;
+    color: #dddfe0;
+  }
 }
 
-.button {
-  width: 280px;
-  margin: 10px auto;
-  height: 50px;
-  border: 2px solid #d12755;
-  background-color: #f2f2f2;
-  border-radius: 25px;
-}
+@media (min-width: @desktop-width) {
+  .buttons-block {
+    display: flex;
+    flex-direction: column;
+    width: 470px;
 
-.post span {
-  font-size: 14px;
-  color: #d12755;
-}
+    .button {
+      width: 185px;
+      margin: 10px auto;
+      height: 50px;
+      border: 2px solid #d12755;
+      background-color: #f2f2f2;
+      border-radius: 25px;
+    }
 
-.cancel {
-  border: 2px solid #dddfe0;
-}
+    .post {
+      margin-right: auto;
+    }
 
-.cancel span {
-  font-size: 14px;
-  color: #dddfe0;
+
+    .cancel {
+      margin-left: auto;
+      margin-top: -50px;
+    }
+  }
 }

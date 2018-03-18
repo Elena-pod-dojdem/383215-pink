@@ -1,13 +1,7 @@
 "use strict";
 
 module.exports = function(grunt) {
-  grunt.loadNpmTasks("grunt-contrib-less");
-  grunt.loadNpmTasks("grunt-browser-sync");
-  grunt.loadNpmTasks("grunt-contrib-watch");
-  grunt.loadNpmTasks("grunt-postcss");
-  grunt.loadNpmTasks('grunt-svgstore');
-  grunt.loadNpmTasks('grunt-posthtml');
-  grunt.loadNpmTasks('grunt-cwebp');
+  require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
     less: {
@@ -117,13 +111,15 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask("serve", ["browserSync", "watch"]);
+  grunt.registerTask("serve", ["browserSync", "watch"],);
 
   grunt.registerTask("build", [
     "less",
     "postcss",
     "csso",
     "svgstore",
-    "posthtml"
+    "posthtml",
+    "imagemin",
+    "cwebp"
   ]);
 };

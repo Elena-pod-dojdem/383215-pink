@@ -4,26 +4,40 @@
   width: 320px;
   min-height: 51px;
   margin: 0 auto;
-}
 
-.photo-nav__toggle {
-  position: absolute;
-  top: 8px;
-  right: 0;
-  z-index: 2;
+  .photo-nav__toggle {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    z-index: 2;
 
-  display: block;
-  width: 70px;
-  height: 50px;
-  font-size: 0;
-  background-color: transparent;
+    display: block;
+    width: 70px;
+    height: 50px;
+    font-size: 0;
+    background-color: transparent;
 
-  cursor: pointer;
-  border: none;
+    cursor: pointer;
+    border: none;
 
-  &:hover,
-  &:active {
-    background-color: #283645;
+    &:hover,
+    &:active {
+      background-color: #283645;
+    }
+
+    .photo-nav__toggle span {
+      font-size: 0;
+    }
+  }
+
+  .photo-nav__wrapper {
+    margin: 0 auto;
+
+    .photo-nav__list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
   }
 }
 
@@ -77,21 +91,11 @@
   }
 }
 
-.photo-nav__toggle span {
-  font-size: 0;
-}
+.photo-nav--closed .site-list__item {
+  display: none;
 
-.photo-nav__wrapper {
-  margin: 0 auto;
-}
-
-@media (max-width: @mobile-width-only) {
-  .photo-nav--closed .site-list__item {
-    display: none;
-
-    &--active {
-      display: block;
-    }
+  &--active {
+    display: block;
   }
 }
 
@@ -132,19 +136,12 @@
 
 .photo-nav--nojs .site-list__item {
   display: block;
-}
 
-.photo-nav--nojs .site-list__item--active a {
-  padding-right: 21px;
-  padding-left: 21px;
-  text-align: left;
-}
-
-
-.photo-nav__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  .photo-nav--nojs .site-list__item--active a {
+    padding-right: 21px;
+    padding-left: 21px;
+    text-align: left;
+  }
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -167,16 +164,16 @@
     width: 660px;
     min-height: 63px;
     margin: 0 auto;
-  }
 
-  .photo-nav__wrapper {
-    margin: 0 auto;
-  }
+    .photo-nav__wrapper {
+      margin: 0 auto;
 
-  .photo-nav__list {
-    width: 660px;
-    padding: 0;
-    list-style: none;
+      .photo-nav__list {
+        width: 660px;
+        padding: 0;
+        list-style: none;
+      }
+    }
   }
 }
 
@@ -184,6 +181,19 @@
   .photo-nav {
     width: 960px;
     display: flex;
+
+
+    .photo-nav__toggle {
+      display: none;
+    }
+
+    .photo-nav__wrapper {
+      display: flex;
+
+      .photo-nav__list {
+        border-bottom: none;
+      }
+    }
   }
 
   .photo-nav--opened .photo-nav__wrapper {
@@ -193,17 +203,5 @@
     left: 0;
     z-index: 10;
     min-height: 110px;
-  }
-
-  .photo-nav__wrapper {
-    display: flex;
-  }
-
-  .photo-nav__toggle {
-    display: none;
-  }
-
-  .photo-nav__list {
-    border-bottom: none;
   }
 }

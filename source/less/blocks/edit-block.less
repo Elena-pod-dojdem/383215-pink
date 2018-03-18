@@ -3,57 +3,58 @@
   padding-top: 20px;
   background-color: #f2f2f2;
   border-bottom: 1px solid #dddfe0;
-}
 
-.edit-block__container {
-  margin-bottom: 40px;
-}
+  .edit-block__container {
+    margin-bottom: 40px;
 
-.edit-block__photo {
-  display: block;
-  margin: 0 auto;
-}
 
-.edit__buttons-container {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
-}
+    .edit-block__photo {
+      display: block;
+      margin: 0 auto;
+    }
+  }
 
-.range-control {
-  width: 280px;
-  margin: 10px auto 20px;
-}
+  .edit__buttons-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
 
-.range-control__scale {
-  position: relative;
-}
+    .range-control {
+      width: 280px;
+      margin: 10px auto 20px;
 
-.range-control__scale::before {
-  content: "";
-  display: block;
-  position: absolute;
-  background-color: #000000;
-  width: 280px;
-  height: 2px;
-}
+      .range-control__scale {
+        position: relative;
 
-.bar {
-  font-size: 0;
-  position: relative;
-}
+        .range-control__scale::before {
+          content: "";
+          display: block;
+          position: absolute;
+          background-color: #000000;
+          width: 280px;
+          height: 2px;
+        }
 
-.bar::before {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 15px;
-  width: 15px;
-  left: 220px;
-  top: -23px;
-  border: 2px solid #d12755;
-  background-color: #ffffff;
-  border-radius: 50%;
+        .bar {
+          font-size: 0;
+          position: relative;
+        }
+
+        .bar::before {
+          content: "";
+          display: block;
+          position: absolute;
+          height: 15px;
+          width: 15px;
+          left: 220px;
+          top: -23px;
+          border: 2px solid #d12755;
+          background-color: #ffffff;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -62,47 +63,28 @@
     width: @tablet-width;
     flex-direction: column;
     padding: 40px 20px 0;
-  }
-}
 
-@media (min-width: @tablet-width) {
-  .edit__bottom-container {
-    margin-left: auto;
-  }
-}
+    .edit-block__container {
+      align-self: flex-start;
+    }
 
-@media (min-width: @tablet-width) {
-  .edit-block__container {
-    align-self: flex-start;
-  }
-}
+    .edit__bottom-container {
+      margin-left: auto;
 
-@media (min-width: @tablet-width) {
-  .edit__buttons-container {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 170px;
-    align-self: flex-end;
-    margin-top: -415px;
-  }
-}
+      .edit__buttons-container {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 170px;
+        align-self: flex-end;
+        margin-top: -415px;
+      }
 
-@media (min-width: @tablet-width) {
-  .button {
-    width: 280px;
-    margin: 10px auto;
-    height: 50px;
-    border: 2px solid #d12755;
-    background-color: #f2f2f2;
-    border-radius: 25px;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .range-control {
-    width: 300px;
-    align-self: flex-end;
+      .range-control {
+        width: 300px;
+        align-self: flex-end;
+      }
+    }
   }
 }
 
@@ -110,61 +92,21 @@
   .edit-block {
     display: flex;
     width: @desktop-width;
-  }
-}
 
-@media (min-width: @desktop-width) {
-  .edit__block__container {
-    margin-right: auto;
-  }
-}
+    .edit__block__container {
+      margin-right: auto;
+    }
 
-@media (min-width: @desktop-width) {
-  .edit__bottom-container {
-    margin-left: auto;
-  }
-}
+    .edit__bottom-container {
+      margin-left: auto;
 
-@media (min-width: @desktop-width) {
-  .edit__buttons-container {
-    width: 525px;
-  }
-}
+      .edit__buttons-container {
+        width: 525px;
+      }
 
-@media (min-width: @desktop-width) {
-  .range-control {
-    visibility: hidden;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .buttons-block {
-    display: flex;
-    flex-direction: column;
-    width: 470px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .button {
-    width: 185px;
-    margin: 10px auto;
-    height: 50px;
-    border: 2px solid #d12755;
-    background-color: #f2f2f2;
-    border-radius: 25px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .post {
-    margin-right: auto;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .cancel {
-    margin-left: auto;
-    margin-top: -50px;
+      .range-control {
+        visibility: hidden;
+      }
+    }
   }
 }

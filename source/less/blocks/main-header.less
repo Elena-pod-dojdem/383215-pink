@@ -1,85 +1,90 @@
-.main-header {
-  width: 320px;
-  margin: 0 auto;
-  background-color: @bg-dark;
+.top-container {
+  margin-bottom: -20px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  .main-header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 0;
+
+    .main-header__logo {
+      height: 25px;
+      padding: 10px 0;
+      margin: 10px 0 0 0;
+
+      .main-header__image {
+        width: 74px;
+        height: 23px;
+      }
+    }
+  }
+}
+
+.bottom-container {
+  padding-top: 355px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #ffffff;
+  box-sizing: border-box;
+  background-color: #283645;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url(@bg-path);
   background-repeat: no-repeat;
   background-position: 0 170px, top center;
-  background-size: 258px 286px, 320px 462px;
+  background-size: 258px 292px, 320px 462px;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/iphone-hand-mobile@2x.png"),
-      url("../img/bg-back-mobile@2x.jpg");
+    url("../img/bg-back-mobile@2x.jpg");
     background-size: 516px 572px, 1400px 924px;
   }
 }
 
-.main-header__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #283645;
-  width: @mobile-width;
-  margin: 0 auto;
-}
-
-.main-header__logo {
-  height: 25px;
-  padding: 10px;
-  margin: 10px;
-}
-
-.main-header__image {
-  width: 74px;
-  height: 23px;
-}
-
-.main-header__toggle {
-  display: none;
-}
-
 @media (min-width: @tablet-width) {
-  .main-header {
+  .container {
     width: 660px;
-    margin: 0 auto;
-    padding-bottom: 73px;
+
+    .main-header__container {
+      padding-top: 28px;
+      padding-bottom: 24px;
+      align-items: flex-end;
+
+      .main-header__logo {
+          margin: 2px 10px 18px 10px;
+
+        .main-header__image {
+          width: 146px;
+          height: 40px;
+        }
+      }
+    }
+  }
+
+  .bottom-container {
+//    width: 660px;
+//    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 63px;
     background-color: @bg-dark;
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: -21px 176px, top center;
     background-size: 700px 545px, 1200px 729px;
-  }
 
   @media (min-width: 660px) and (min-resolution: 144dpi),
     (min-width: 660px) and (min-resolution: 1.5dppx) {
-    .main-header {
-      background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
-      background-size: 1400px 1089px, 2400px 1458px;
-      background-repeat: no-repeat, no-repeat;
-      background-position: -454px 204px, top center;
+      .bottom-container {
+        background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+        background-size: 1400px 1089px, 2400px 1458px;
+        background-repeat: no-repeat, no-repeat;
+        background-position: -454px 204px, top center;
+      }
     }
-  }
-
-  .main-header__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #283645;
-    width: @tablet-width;
-    margin: 0 auto;
-  }
-
-  .main-header__logo {
-    margin: 2px 10px 18px 10px;
-  }
-
-  .main-header__image {
-    width: 146px;
-    height: 40px;
-  }
-
-  .main-header__toggle {
-    display: none;
   }
 }
 
@@ -92,7 +97,6 @@
     background-repeat: no-repeat;
     background-position: 46px 215px, -318px 0;
     background-size: 1050px 645px, 2560px 853px;
-  }
 
   @media (min-width: 960px) and (min-resolution: 144dpi),
     (min-width: 960px) and (min-resolution: 1.5dppx) {
@@ -105,26 +109,21 @@
       background-position: top center, top center;
     }
   }
-}
 
-@media (min-width: @desktop-width) {
-  .main-header__container {
-    height: 110px;
-    width: @desktop-width;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
+    .main-header__container {
+      height: 110px;
+      width: @desktop-width;
+      background-color: rgba(0, 0, 0, 0.3);
 
-  .main-header__logo {
-    margin: -17px 0 0 51px;
-    width: 146px;
-  }
+      .main-header__logo {
+        margin: -17px 0 0 51px;
+        width: 146px;
 
-  .main-header__image {
-    height: 110px;
-    width: 190px;
-  }
-
-  .main-header__toggle {
-    display: none;
+        .main-header__image {
+          height: 110px;
+          width: 190px;
+        }
+      }
+    }
   }
 }

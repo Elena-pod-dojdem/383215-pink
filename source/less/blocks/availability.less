@@ -6,32 +6,42 @@
   padding: 5px 5px;
   margin: 0 auto;
   padding-top: 40px;
-  margin-top: 383px;
-}
+  margin-top: 95px;
 
-.availability__header {
-  display: none;
-}
+  .availability__header {
+    display: none;
+  }
 
-.availability__toggle {
-  width: 274px;
-  height: 50px;
-  border: 3px solid #ffffff;
-  border-radius: 25px;
-  background-color: transparent;
-  color: @light-color;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 35px;
-}
+  .availability__toggle {
+    width: 274px;
+    height: 50px;
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+    background-color: transparent;
+    color: @light-color;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 35px;
+  }
 
-.availability__info {
-  color: @light-color;
-  text-align: center;
-  width: 280px;
-  align-self: center;
-  padding-top: 85px;
-  padding-bottom: 30px;
+  .availability__icons {
+    width: 280px;
+    display: flex;
+    justify-content: space-around;
+
+    .availability-icons__image {
+      width: 60px;
+    }
+  }
+
+  .availability__info {
+    color: @light-color;
+    text-align: center;
+    width: 280px;
+    align-self: center;
+    padding-top: 85px;
+    padding-bottom: 30px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -41,9 +51,7 @@
     margin-right: 320px;
     margin-top: 90px;
   }
-}
 
-@media (min-width: @tablet-width) {
   .availability__header {
     width: 245px;
     display: block;
@@ -55,9 +63,7 @@
     font-weight: normal;
     text-align: center;
   }
-}
 
-@media (min-width: @tablet-width) {
   .availability__toggle {
     height: 50px;
     width: 296px;
@@ -82,18 +88,14 @@
     margin-left: 0;
     padding-top: 40px;
   }
-}
 
-@media (min-width: @desktop-width) {
   .availability__header {
     color: @light-color;
     font-size: 50px;
     margin-left: auto;
     margin-right: auto;
   }
-}
 
-@media (min-width: @desktop-width) {
   .availability__toggle {
     width: 294px;
     height: 50px;
@@ -107,9 +109,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-}
 
-@media (min-width: @desktop-width) {
   .availability__info {
     color: @light-color;
     text-align: center;

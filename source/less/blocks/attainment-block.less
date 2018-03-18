@@ -7,45 +7,45 @@
   padding-top: 50px;
   background-color: #f2f2f2;
   color: #d22856;
-}
 
-.attainment-header {
-  padding-top: 35px;
-  text-transform: uppercase;
-  color: #d22856;
-  position: absolute;
-  width: 195px;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-}
+  .attainment-header {
+    padding-top: 35px;
+    text-transform: uppercase;
+    color: #d22856;
+    position: absolute;
+    width: 195px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
 
-.attainment-wrapper {
-  color: @dark-color;
-  margin-top: 50px;
-  margin-bottom: 10px;
-}
+  .attainment-wrapper {
+    color: @dark-color;
+    margin-top: 50px;
+    margin-bottom: 10px;
 
-.attainment__container {
-  display: inline-flex;
-  padding: 10px;
-  font: inherit;
-  margin-bottom: 10px;
-  color: @dark-color;
-  width: 280px;
-}
+    .attainment__container {
+      display: inline-flex;
+      padding: 10px;
+      font: inherit;
+      margin-bottom: 10px;
+      color: @dark-color;
+      width: 280px;
 
-.attainment__container span {
-  text-transform: none;
-}
+      .attainment__label {
+        font-size: 0;
+      }
 
-.attainment__label {
-  font-size: 0;
-}
+      .attainment__input {
+        margin-right: 20px;
 
-.attainment__input {
-  margin-right: 20px;
+        .attainment__input span {
+          text-transform: none;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -59,96 +59,65 @@
     color: #d22856;
     background-color: #ffffff;
     padding-top: 0;
-  }
-}
 
-@media (min-width: @tablet-width) {
-  .attainment-header {
-    padding: 0 15px;
-    width: 490px;
-    margin-top: -10px;
-    background-color: #ffffff;
-    font-size: 18px;
-    font-weight: normal;
-  }
-}
+    .attainment-header {
+      padding: 0 15px;
+      width: 490px;
+      margin-top: -10px;
+      background-color: #ffffff;
+      font-size: 18px;
+      font-weight: normal;
+    }
 
-@media (min-width: @tablet-width) {
-  .attainment-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .attainment__container {
-    width: 260px;
-    margin-right: 20px;
-    margin-left: auto;
+    .attainment-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .attainment-block {
     order: 3;
-  }
-}
 
-@media (min-width: @desktop-width) {
-  .attainment-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
+    .attainment-wrapper {
+      display: flex;
+      flex-wrap: wrap;
 
-@media (min-width: @desktop-width) {
-  .attainment__container {
-    width: 260px;
-    margin-right: 20px;
-    margin-left: auto;
-  }
-}
+      .attainment__container {
+        width: 260px;
+        margin-right: 20px;
+        margin-left: auto;
 
-@media (min-width: @desktop-width) {
-  .attainment__container span {
-    text-transform: none;
-    font-size: 18px;
-  }
-}
+        .attainment__input span {
+          text-transform: none;
+          font-size: 18px;
+        }
+      }
 
+      .shark {
+        order: -6;
+      }
 
-@media (min-width: @desktop-width) {
-  .shark {
-    order: -6;
-  }
-}
+      .beach {
+        order: -2;
+      }
 
-@media (min-width: @desktop-width) {
-  .beach {
-    order: -2;
-  }
-}
+      .norris {
+        order: -4;
+      }
 
-@media (min-width: @desktop-width) {
-  .norris {
-    order: -4;
-  }
-}
+      .souvenir {
+        order: -1;
+      }
 
-@media (min-width: @desktop-width) {
-  .souvenir {
-    order: -1;
-  }
-}
+      .tower {
+        order: -4;
+      }
 
-@media (min-width: @desktop-width) {
-  .tower {
-    order: -4;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .hotel {
-    order: -1;
+      .hotel {
+        order: -1;
+      }
+    }
   }
 }
