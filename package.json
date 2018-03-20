@@ -7,7 +7,7 @@
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "7.2.x",
     "grunt": "^1.0.1",
-    "grunt-browser-sync": "2.2.x",
+    "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-imagemin": "^2.0.1",
     "grunt-contrib-less": "1.4.x",
@@ -42,5 +42,8 @@
   ],
   "engines": {
     "node": "8.9"
+  },
+  "dependencies": {
+    "posthtml-include": "^1.1.0"
   }
 }

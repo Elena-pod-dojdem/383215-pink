@@ -1,6 +1,6 @@
 "use strict";
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-less");
   grunt.loadNpmTasks("grunt-browser-sync");
   grunt.loadNpmTasks("grunt-contrib-watch");
@@ -45,24 +45,24 @@ module.exports = function(grunt) {
         includeTitleElement: false
       },
       sprite: {
-          files: {
-            "source/img/sprite.svg": ["source/img/icon-*.svg"]
-          }
+        files: {
+          "source/img/sprite.svg": ["source/img/icon-*.svg"]
         }
+      }
     },
 
     posthtml: {
       options: {
         use: [
-            require("posthtml-include")()
-          ]
-        },
-        html: {
-          files: [{
-            expand: true,
-              src: ["source/*.html"]
-          }]
-        }
+          require("posthtml-include")()
+        ]
+      },
+      html: {
+        files: [{
+          expand: true,
+            src: ["source/*.html"]
+        }]
+      }
     },
 
     imagemin: {
