@@ -17,6 +17,7 @@
     "grunt-posthtml": "^0.5.0",
     "grunt-svgstore": "^1.0.0",
     "load-grunt-tasks": "^3.5.2",
+    "posthtml-include": "^1.1.0",
     "stylelint": "8.4.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
@@ -44,8 +45,12 @@
     "node": "8.9"
   },
   "dependencies": {
+<<<<<<< HEAD
     "grunt-csso": "^2.2.1",
     "posthtml-include": "^1.1.0",
     "svgstore": "^2.0.3"
+=======
+    "posthtml-render": "^1.1.0"
+>>>>>>> 094244c5ca8e4762ff872bba330237ead82f29f7
   }
 }

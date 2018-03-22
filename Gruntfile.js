@@ -12,6 +12,68 @@ module.exports = function(grunt) {
       }
     },
 
+    posthtml: {
+      options: {
+        use: [
+          require("posthtml-include")()
+        ]
+      },
+      html: {
+        files: [{
+          expand: true,
+          src: ["source/*.html"]
+        }]
+      }
+    },
+
+    svgstore: {
+      options: {
+        includeTitleElement: false
+        },
+        sprite: {
+          files: {
+          "source/img/sprite.svg": ["source/img/icon-*.svg"]
+        }
+      }
+    },
+
+    csso: {
+      style: {
+        options: {
+          report: "gzip"
+        },
+        files: {
+          "source/css/style.min.css": ["source/css/style.css"]
+        }
+      }
+    },
+
+    imagemin: {
+      images: {
+        options: {
+          optimizationLevel: 3,
+          progressive: true
+        },
+        files: [{
+          expand: true,
+          src: ["source/img/**/*.{png,jpg,svg}"]
+        }]
+      }
+    },
+
+    cwebp: {
+      images: {
+        options: {
+          q: 90
+        },
+        files: [{
+          expand: true,
+          src: ["source/img/**/*.{png,jpg}"]
+        }]
+      }
+    },
+
+
     postcss: {
       style: {
         options: {
