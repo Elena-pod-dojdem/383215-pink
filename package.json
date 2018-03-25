@@ -7,7 +7,7 @@
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "7.2.x",
     "grunt": "^1.0.1",
-    "grunt-browser-sync": "2.2.x",
+    "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-imagemin": "^2.0.1",
     "grunt-contrib-less": "1.4.x",
@@ -45,12 +45,9 @@
     "node": "8.9"
   },
   "dependencies": {
-<<<<<<< HEAD
     "grunt-csso": "^2.2.1",
     "posthtml-include": "^1.1.0",
     "svgstore": "^2.0.3"
-=======
     "posthtml-render": "^1.1.0"
->>>>>>> 094244c5ca8e4762ff872bba330237ead82f29f7
   }
 }
